@@ -197,7 +197,7 @@ Este utiliza los protitpos de la liberia memory_management.h, por lo que no impo
 
 Los bloques en este lenguaje se delimintan con llaves, esto aplica para lass funciones, estructuras de control y de flujo
 
-![](/images/Practica1/Bloques.png )
+![](./images/Bloques.png )
 
 
 ### **Alcance**
@@ -309,7 +309,7 @@ La secuencia del codigo inicia desde la funcion main, sin importar que este al i
 
 De igual forma cabe aclarar que es recomendable poner los protitipos de las funciones, ya que puede haber errores al intentar llamarlas en algunas partes del codigo
 
-![](/images/Practica1/Secuencia.png )
+![](./images/Secuencia.png )
 
 
 ### **Selección**

@@ -16,20 +16,20 @@ En la primera sesión se nos mostró de forma rápida las primeras herramientas 
 * Como insertar tablas
 * Cómo insertar casillas
 
-![](/images/Practica0/image1.png )
+![](./images/image1.png )
 
 ## **Segunda sesión: Uso de Git y Github**
 
 En esta sesión se realizó la instalaciones de los Git y Gitlab necesarios para crear un repositorio en GitHub. Además de instalar los programas fue necesario realizar una serie de comandos para la correcta configuración del repositorio.
 
-![](/images/Practica0/image2.png )
+![](./images/image2.png )
 Una vez creado el repositorio se nos enseñó la serie de comandos en Gitbash, ya que es importante empezar a familiarizarse con la terminal para trabajar, resumidamente fueron comandos para moverse a través de las carpetas de la computadora, crear archivos, borrar archivos, y comandos para subir archivos al repositorio.
 
-![](/images/Practica0/image3.png )
+![](./images/image3.png )
 
 Un tip fue crear un archivo .gitignore para que al momento de querer subir o actualizar los archivos sean ignorados. Esto puede ser útil principalmente para que no sean útiles o necesarios, como los ejecutables de un código compilado como C.
 
-![](/images/Practica0/image4.png )
+![](./images/image4.png )
 
 ## **Tercera sesión: Combinar los conocimientos de Markdown y Git para generar páginas estáticas con Hugo y Github**
 
@@ -37,8 +37,8 @@ Una vez creado el repositorio fue necesario instalar e instalado Gitlab, se real
 
 Para iniciar la página es necesario el comando hugo serve
 
-![](/images/Practica0/image5.png )
+![](./images/image5.png )
 Y para detenerlo se debe usar el control + c.
 
 - Evidencia de la pagina creada:
-![](/images/Practica0/image6.png )
+![](./images/image6.png )

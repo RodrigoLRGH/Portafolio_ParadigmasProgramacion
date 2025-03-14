@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Rodrigo López Rojas</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Practica 1: Elementos básicos de los lenguajes de programación
+Introducción
+Para esta practica el profesor proporciono un codigo en C para gestionar una blibloteca, con el objetivo de identificar los elementos fundamentales de los lenguajes de programación que son: nombres, objetos, entornos, bloques, alcance, administración de memoria, expresiones, comandos, secuencia, selección, iteración, recursión, subprogramas, y tipos de datos.
+Nombres y Objetos
+- bibliteca.c
+Variables globales
+En el codigo se puede encontrar dos variables globales de tipo entero">
+    <meta name="generator" content="Hugo 0.144.2">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    <meta name="author" content="Rodrigo López Rojas">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/practica1/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/practica1/">
+  <meta property="og:site_name" content="Rodrigo López Rojas">
+  <meta property="og:title" content="Rodrigo López Rojas">
+  <meta property="og:description" content="Practica 1: Elementos básicos de los lenguajes de programación Introducción Para esta practica el profesor proporciono un codigo en C para gestionar una blibloteca, con el objetivo de identificar los elementos fundamentales de los lenguajes de programación que son: nombres, objetos, entornos, bloques, alcance, administración de memoria, expresiones, comandos, secuencia, selección, iteración, recursión, subprogramas, y tipos de datos.
+Nombres y Objetos - bibliteca.c Variables globales En el codigo se puede encontrar dos variables globales de tipo entero">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+  <meta itemprop="name" content="Rodrigo López Rojas">
+  <meta itemprop="description" content="Practica 1: Elementos básicos de los lenguajes de programación Introducción Para esta practica el profesor proporciono un codigo en C para gestionar una blibloteca, con el objetivo de identificar los elementos fundamentales de los lenguajes de programación que son: nombres, objetos, entornos, bloques, alcance, administración de memoria, expresiones, comandos, secuencia, selección, iteración, recursión, subprogramas, y tipos de datos.
+Nombres y Objetos - bibliteca.c Variables globales En el codigo se puede encontrar dos variables globales de tipo entero">
+  <meta itemprop="wordCount" content="1594">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Rodrigo López Rojas">
+  <meta name="twitter:description" content="Practica 1: Elementos básicos de los lenguajes de programación Introducción Para esta practica el profesor proporciono un codigo en C para gestionar una blibloteca, con el objetivo de identificar los elementos fundamentales de los lenguajes de programación que son: nombres, objetos, entornos, bloques, alcance, administración de memoria, expresiones, comandos, secuencia, selección, iteración, recursión, subprogramas, y tipos de datos.
+Nombres y Objetos - bibliteca.c Variables globales En el codigo se puede encontrar dos variables globales de tipo entero">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Rodrigo López Rojas
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1"></h1>
+      
+      <p class="tracked"><strong>Rodrigo López Rojas</strong>
+      </p>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="practica-1-elementos-básicos-de-los-lenguajes-de-programación">Practica 1: Elementos básicos de los lenguajes de programación</h1>
+<h2 id="introducción"><strong>Introducción</strong></h2>
+<p>Para esta practica el profesor proporciono un codigo en C para gestionar una blibloteca, con el objetivo de identificar los elementos fundamentales de los lenguajes de programación que son: nombres, objetos, entornos, bloques, alcance, administración de memoria, expresiones, comandos, secuencia, selección, iteración, recursión, subprogramas, y tipos de datos.</p>
+<h3 id="nombres-y-objetos"><strong>Nombres y Objetos</strong></h3>
+<h4 id="--biblitecac">- bibliteca.c</h4>
+<h5 id="variables-globales">Variables globales</h5>
+<p>En el codigo se puede encontrar dos variables globales de tipo entero</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> static_var <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>  <span style="color:#75715e">//Variable estatica
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> bss_var         <span style="color:#75715e">//Variable no estatica
+</span></span></span></code></pre></div><h5 id="apuntadores">Apuntadores</h5>
+<p>Dos apuntadores, uno llamado library con un tipo de dato book_t, y otro llamado members tipo member_t</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#75715e">//Ambos apuntadores se inicializan apuntando a NULL
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library <span style="color:#f92672">=</span> NULL;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">member_t</span> <span style="color:#f92672">*</span>members <span style="color:#f92672">=</span> NULL;
+</span></span></code></pre></div><h5 id="estructuras">Estructuras</h5>
+<p>Estructuras con uso del typedef para los libros, miembros y generos de libros. Cada estructura con sus propios nombres y variables dentro.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">enum</span> {
+</span></span><span style="display:flex;"><span>    FICTION,
+</span></span><span style="display:flex;"><span>    NON_FICTION,
+</span></span><span style="display:flex;"><span>    SCIENCE,
+</span></span><span style="display:flex;"><span>    HISTORY,
+</span></span><span style="display:flex;"><span>    FANTASY,
+</span></span><span style="display:flex;"><span>    BIOGRAPHY,
+</span></span><span style="display:flex;"><span>    OTHER
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">genre_t</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">struct</span> _book {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> id;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">char</span> title[<span style="color:#ae81ff">100</span>];
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">char</span> author[<span style="color:#ae81ff">100</span>];
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> publication_year;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">genre_t</span> genre;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> quantity;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">struct</span> _book <span style="color:#f92672">*</span>next;
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">book_t</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">struct</span> _member {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> id;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">char</span> name[<span style="color:#ae81ff">100</span>];
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> issued_count;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>issued_books;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">struct</span> _member <span style="color:#f92672">*</span>next;
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">member_t</span>;
+</span></span></code></pre></div><h5 id="funciones">Funciones</h5>
+<p>Funciones, donde cada funcion tiene su propio tipo de dato y parametros</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> <span style="color:#a6e22e">genreToString</span>(<span style="color:#66d9ef">genre_t</span> genre);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">addBook</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">**</span>library, <span style="color:#66d9ef">int</span><span style="color:#f92672">*</span> count);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">book_t</span><span style="color:#f92672">*</span> <span style="color:#a6e22e">findBookById</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library, <span style="color:#66d9ef">int</span> bookID);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">displayBooksRecursive</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">displayBooks</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">addMember</span>(<span style="color:#66d9ef">member_t</span> <span style="color:#f92672">**</span>members, <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>memberCount);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">issueBook</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library, <span style="color:#66d9ef">member_t</span> <span style="color:#f92672">*</span>members);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">returnBook</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library, <span style="color:#66d9ef">member_t</span> <span style="color:#f92672">*</span>members);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">freeLibrary</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">freeMembers</span>(<span style="color:#66d9ef">member_t</span> <span style="color:#f92672">*</span>members);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">saveLibraryToFile</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>filename);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">loadLibraryFromFile</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">**</span>library, <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>bookCount, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>filename);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">saveMembersToFile</span>(<span style="color:#66d9ef">member_t</span> <span style="color:#f92672">*</span>members, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>filename);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">loadMembersFromFile</span>(<span style="color:#66d9ef">member_t</span> <span style="color:#f92672">**</span>members, <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>memberCount, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>filename);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">displayMembers</span>(<span style="color:#66d9ef">member_t</span> <span style="color:#f92672">*</span>members, <span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">searchMember</span>(<span style="color:#66d9ef">member_t</span> <span style="color:#f92672">*</span>members, <span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library);
+</span></span></code></pre></div><h4 id="--libreria-memory_managementh">- Libreria memory_management.h</h4>
+<h5 id="macros">Macros</h5>
+<p>Esta libreria cuanta con macros, cada uno con su respectivo nombre</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#75715e">#ifndef MEMORY_MANAGEMENT_H
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define MEMORY_MANAGEMENT_H
+</span></span></span></code></pre></div><h5 id="variables-tipo-entero">Variables tipo entero</h5>
+<p>Cuenta con variables extern int para contar el uso de memoria</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">extern</span> <span style="color:#66d9ef">int</span> heap_allocations;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">extern</span> <span style="color:#66d9ef">int</span> heap_deallocations;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">extern</span> <span style="color:#66d9ef">int</span> stack_allocations;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">extern</span> <span style="color:#66d9ef">int</span> stack_deallocations;
+</span></span></code></pre></div><h4 id="--memory_managementc">- memory_management.c</h4>
+<p>De igual forma se cuenta con variables globales</p>
+<h4 id="variables-tipo-entero-1">Variables tipo entero</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> heap_allocations <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> heap_deallocations <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> stack_allocations <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> stack_deallocations <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span></code></pre></div><h4 id="apuntador">Apuntador</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span>MemoryRecord <span style="color:#f92672">*</span>heap_memory_records <span style="color:#f92672">=</span> NULL;
+</span></span></code></pre></div><h4 id="estructura">Estructura</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">struct</span> MemoryRecord {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>pointer;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">size_t</span> size;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">struct</span> MemoryRecord <span style="color:#f92672">*</span>next;
+</span></span><span style="display:flex;"><span>} MemoryRecord;
+</span></span></code></pre></div><h4 id="funciones-tipo-void">Funciones tipo void</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">addMemoryRecord</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>pointer, <span style="color:#66d9ef">size_t</span> size);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">removeMemoryRecord</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>pointer);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">displayMemoryUsage</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">incrementHeapAllocations</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>pointer, <span style="color:#66d9ef">size_t</span> size);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">incrementHeapDeallocations</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>pointer);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">incrementStackAllocations</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">incrementStackDeallocations</span>();
+</span></span></code></pre></div><h4 id="un-apuntador-tipo-memoryrecord">Un apuntador tipo MemoryRecord</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span>MemoryRecord <span style="color:#f92672">*</span>heap_memory_records <span style="color:#f92672">=</span> NULL;
+</span></span></code></pre></div><h3 id="entornos"><strong>Entornos</strong></h3>
+<h4 id="--bibliotecac">- biblioteca.c</h4>
+<p>En este codigo tenemos tres diferentes entornos</p>
+<ul>
+<li>Global
+En este entorno contamos con variables donde cualquier parte del codigo puede tener acceso a ellas</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> bss_var;
+</span></span></code></pre></div><ul>
+<li>Estatica
+Estas variables tiene la cualidad de que sin importar en que parte del codigo se encuentre, su valor no se perdera, al contrario de las variables locales</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> static_var <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span></code></pre></div><ul>
+<li>Local
+Estas suelen ser variables que se definen dentro de funciones, por lo que una vez se salga de la funcion, la variable perdera su valor, aunque se vuelva a llamar la funcion la variable se inicializara de nuevo</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">issueBook</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library, <span style="color:#66d9ef">member_t</span> <span style="color:#f92672">*</span>members) 
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> bookID, memberID;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Ingresa el ID del miembro: &#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">scanf</span>(<span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#f92672">&amp;</span>memberID);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Ingresa el ID del libro: &#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">scanf</span>(<span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#f92672">&amp;</span>bookID);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="--memoy_managementh">- memoy_management.h</h4>
+<p>Al ser una libreria solo cuenta con los prototipos de las funciones</p>
+<h3 id="--memory_managementc-1">- memory_management.c</h3>
+<p>Este utiliza los protitpos de la liberia memory_management.h, por lo que no importa en que orden se escriban o se usen las funciones, estas seran accesibles desde cualquier parte del codigo</p>
+<h3 id="bloques"><strong>Bloques</strong></h3>
+<p>Los bloques en este lenguaje se delimintan con llaves, esto aplica para lass funciones, estructuras de control y de flujo</p>
+<p><img src="/images/Practica1/Bloques.png" alt=""></p>
+<h3 id="alcance"><strong>Alcance</strong></h3>
+<h4 id="--bibliotecac-1">- biblioteca.c</h4>
+<p>En cuanto alcance nos limitamos a dos, el global y el local:</p>
+<ul>
+<li>Una variable global puede ser usada en cualquier parte el codigo
+Por ejemeplo:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> bss_var;
+</span></span></code></pre></div><ul>
+<li>Una variable local solo son accesibles dentro de su respectivo bloque
+Por ejemplo:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">searchMember</span>(<span style="color:#66d9ef">member_t</span> <span style="color:#f92672">*</span>members, <span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> memberID;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Mientras que las funciones al tener sus prototipos estas pueden ser llamadas desde cualquier parte del codigo sin importar el orden en que se ejecute el codigo</p>
+<h4 id="--memory_managementh">- memory_management.h</h4>
+<p>Tanto las variables enteras, como las funciones, son accesibles desde cualquier parte del codigo</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">extern</span> <span style="color:#66d9ef">int</span> heap_allocations;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">extern</span> <span style="color:#66d9ef">int</span> heap_deallocations;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">extern</span> <span style="color:#66d9ef">int</span> stack_allocations;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">extern</span> <span style="color:#66d9ef">int</span> stack_deallocations;
+</span></span></code></pre></div><p>Mientras que apesar de que las funciones tambien deberia ser accesibles desde cualquier parte del codigo, solo podran accederse si se cumple la condicion</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#if MEMORY_MANAGEMENT_DISPLAY
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">displayMemoryUsage</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">incrementHeapAllocations</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>pointer, <span style="color:#66d9ef">size_t</span> size);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">incrementHeapDeallocations</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>pointer);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">incrementStackAllocations</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">incrementStackDeallocations</span>();
+</span></span></code></pre></div><h4 id="--memory_managementc-2">- memory_management.c</h4>
+<p>Este codigo solamente desarrolla el procedimiento que haran las funciones de la libreria memoery_management.h, y al no contar con una funcion main, no se ejecutara ninguna de las funciones por si sola</p>
+<h3 id="administración-de-memoria"><strong>Administración de memoria</strong></h3>
+<p>Para reservar la memoria en el heap se utiliza malloc y realloc</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#75715e">//malloc
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>new_book <span style="color:#f92672">=</span> (<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>)<span style="color:#a6e22e">malloc</span>(<span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">book_t</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//realloc
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>memberFound<span style="color:#f92672">-&gt;</span>issued_books <span style="color:#f92672">=</span> <span style="color:#a6e22e">realloc</span>(memberFound<span style="color:#f92672">-&gt;</span>issued_books, memberFound<span style="color:#f92672">-&gt;</span>issued_count <span style="color:#f92672">*</span> <span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">int</span>));
+</span></span></code></pre></div><p>Al terminar el programa se utiliza free para liberar la memoria</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#a6e22e">freeLibrary</span>(library);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">freeMembers</span>(members);
+</span></span></code></pre></div><p>Se registran asignaciones y liberaciones de memoria</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#a6e22e">incrementHeapAllocations</span>(new_member, <span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">member_t</span>));
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">incrementHeapAllocations</span>(new_member<span style="color:#f92672">-&gt;</span>issued_books, new_member<span style="color:#f92672">-&gt;</span>issued_count <span style="color:#f92672">*</span> <span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">int</span>));
+</span></span></code></pre></div><h3 id="expresiones"><strong>Expresiones</strong></h3>
+<h4 id="--bibliotecac-2">- biblioteca.c</h4>
+<p>En cuenta a expresiones tenemos la condicion if, si la condicion se cumple se ejecutara lo que este dentro del bloque, si no, omitira el bloque y seguira con el resto del codigo</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (current<span style="color:#f92672">-&gt;</span>id <span style="color:#f92672">==</span> memberID) {
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="--memory_managementh-1">- memory_management.h</h4>
+<p>En cuanto a la libreria</p>
+<h3 id="comandos"><strong>Comandos</strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#a6e22e">displayMemoryUsage</span>() ((<span style="color:#66d9ef">void</span>)<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">incrementHeapAllocations</span>(pointer, size) ((<span style="color:#66d9ef">void</span>)<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">incrementHeapDeallocations</span>(pointer) ((<span style="color:#66d9ef">void</span>)<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">incrementStackAllocations</span>() ((<span style="color:#66d9ef">void</span>)<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">incrementStackDeallocations</span>() ((<span style="color:#66d9ef">void</span>)<span style="color:#ae81ff">0</span>)
+</span></span></code></pre></div><h3 id="secuencias"><strong>Secuencias</strong></h3>
+<p>La secuencia del codigo inicia desde la funcion main, sin importar que este al inicio o al final del codigo. Despues seguira la secuencia de instrucciones que haya dentro de main, ya sea realizar calculos, comparaciones o llamar a funciones como suele ser el caso.</p>
+<p>De igual forma cabe aclarar que es recomendable poner los protitipos de las funciones, ya que puede haber errores al intentar llamarlas en algunas partes del codigo</p>
+<p><img src="/images/Practica1/Secuencia.png" alt=""></p>
+<h3 id="selección"><strong>Selección</strong></h3>
+<h4 id="--bibliotecac-3">- biblioteca.c</h4>
+<p>El codigo contiene condiciones if-else, en este paso para verificar si un libro existe o no</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (bookFound <span style="color:#f92672">&amp;&amp;</span> memberFound) {
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>En la funcion main se tiene un menu utilizando un switch, y dependiendo del valor entero que se ingrese, dependera la fucnion que se va a llamar, o si se sale del ciclo que mantiene a este menu</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">switch</span>(op) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="memory_managementh-y-memory_managementc">memory_management.h y memory_management.c</h4>
+<p>Ambos codigos cuentan con una condicion #if, #else y endif</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#75715e">#if MEMORY_MANAGEMENT_DISPLAY
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">displayMemoryUsage</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">incrementHeapAllocations</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>pointer, <span style="color:#66d9ef">size_t</span> size);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">incrementHeapDeallocations</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>pointer);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">incrementStackAllocations</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">incrementStackDeallocations</span>();
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#else
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define displayMemoryUsage() ((void)0)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define incrementHeapAllocations(pointer, size) ((void)0)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define incrementHeapDeallocations(pointer) ((void)0)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define incrementStackAllocations() ((void)0)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define incrementStackDeallocations() ((void)0)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#endif
+</span></span></span></code></pre></div><h3 id="iteración"><strong>Iteración</strong></h3>
+<p>Se cuentan con tres tipos de ciclos, cada uno de estos ciclos se repetira una cantidad n de veces mientras la expresion del ciclo se cumpla</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> (current) {
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> current<span style="color:#f92672">-&gt;</span>issued_count; i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span> {
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">while</span>(choice <span style="color:#f92672">!=</span> <span style="color:#ae81ff">8</span>);
+</span></span></code></pre></div><h3 id="recursión"><strong>Recursión</strong></h3>
+<p>En el codigo la funcion displayBooksRecursive(), la cual muestra los libros de forma recursiva</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">displayBooksRecursive</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>library) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">ID libro: %d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Titulo: %s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Autor: %s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Ano de publicacion: %d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Genero: %s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Cantidad: %d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,
+</span></span><span style="display:flex;"><span>        library<span style="color:#f92672">-&gt;</span>id, library<span style="color:#f92672">-&gt;</span>title, library<span style="color:#f92672">-&gt;</span>author, library<span style="color:#f92672">-&gt;</span>publication_year, <span style="color:#a6e22e">genreToString</span>(library<span style="color:#f92672">-&gt;</span>genre), library<span style="color:#f92672">-&gt;</span>quantity);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">displayBooksRecursive</span>(library<span style="color:#f92672">-&gt;</span>next);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="subprogramas"><strong>Subprogramas</strong></h3>
+<h4 id="--bibliotecac-4">- biblioteca.c</h4>
+<p>En cuanto a los subprogramas tenemos a las siguientes funciones</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> <span style="color:#a6e22e">genreToString</span>(<span style="color:#66d9ef">genre_t</span> genre);   <span style="color:#75715e">//Converte las variables de enumeracion a una cadena
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">addBook</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">**</span>library, <span style="color:#66d9ef">int</span><span style="color:#f92672">*</span> count); <span style="color:#75715e">//Añade un libro
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">book_t</span><span style="color:#f92672">*</span> <span style="color:#a6e22e">findBookById</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library, <span style="color:#66d9ef">int</span> bookID);  <span style="color:#75715e">//Busca un libro por id
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">displayBooksRecursive</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library);    <span style="color:#75715e">//Mostrar libros de forma recursiva
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">displayBooks</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library);     <span style="color:#75715e">//Mostrar libros
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">addMember</span>(<span style="color:#66d9ef">member_t</span> <span style="color:#f92672">**</span>members, <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>memberCount);   <span style="color:#75715e">//Añadir miembro
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">issueBook</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library, <span style="color:#66d9ef">member_t</span> <span style="color:#f92672">*</span>members);     <span style="color:#75715e">//Prestar libro
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">returnBook</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library, <span style="color:#66d9ef">member_t</span> <span style="color:#f92672">*</span>members);    <span style="color:#75715e">//Regresar libro
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">freeLibrary</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library);  <span style="color:#75715e">//Librerar memoria de libros
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">freeMembers</span>(<span style="color:#66d9ef">member_t</span> <span style="color:#f92672">*</span>members);    <span style="color:#75715e">//Liberar memoria de miembros
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">saveLibraryToFile</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>filename); <span style="color:#75715e">//Guardar biblioteca en un archivo
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">loadLibraryFromFile</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">**</span>library, <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>bookCount, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>filename); <span style="color:#75715e">//Cargar la bibliteca desde un archivo
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">saveMembersToFile</span>(<span style="color:#66d9ef">member_t</span> <span style="color:#f92672">*</span>members, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>filename);    <span style="color:#75715e">//Guardar miembros en un archivo
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">loadMembersFromFile</span>(<span style="color:#66d9ef">member_t</span> <span style="color:#f92672">**</span>members, <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>memberCount, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>filename);   <span style="color:#75715e">//Cargar miembros de un archivo
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">displayMembers</span>(<span style="color:#66d9ef">member_t</span> <span style="color:#f92672">*</span>members, <span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library);    <span style="color:#75715e">//Mostrar miembros
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">searchMember</span>(<span style="color:#66d9ef">member_t</span> <span style="color:#f92672">*</span>members, <span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library);  <span style="color:#75715e">//Buscar miembro
+</span></span></span></code></pre></div><p>Cada una de estas funciones tiene su propia funcion, y estas funciones con llamadas desde el menu que esta en una funcion main</p>
+<p>El tener estas funciones hace que el codigo pueda ser reutilizable en algun otro proyecto</p>
+<h4 id="--memory_managementc-3">- memory_management.c</h4>
+<p>Este cuenta con dos funciones que definen en el codigo, adicionalmente cuenta con el desarrollo de las funciones que vienen en la libreria &ldquo;memory_management.h&rdquo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#75715e">//Funciones del codigo .c
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">addMemoryRecord</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>pointer, <span style="color:#66d9ef">size_t</span> size);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">removeMemoryRecord</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>pointer);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//Funciones de la libreria .h
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">displayMemoryUsage</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">incrementHeapAllocations</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>pointer, <span style="color:#66d9ef">size_t</span> size);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">incrementHeapDeallocations</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>pointer);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">incrementStackAllocations</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">incrementStackDeallocations</span>();
+</span></span></code></pre></div><h3 id="tipos-de-datos"><strong>Tipos de datos</strong></h3>
+<p>En este codigo se utilizan varios tipos de datos</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">int</span>         <span style="color:#75715e">//dato tipo entero
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">char</span>[]      <span style="color:#75715e">//dato tipo caracter, sin embargo, se utiliza un arreglo para tener una cadena de caracteres
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">struct</span>      <span style="color:#75715e">//una estructura con la cual se crean diferentes tipos de datos
+</span></span></span></code></pre></div><p>Como se vio anteriormente se utiliza el struct junto con el <strong>typedef</strong> para crear un tipo de dato, como en este caso son los libros, miembros y generos. Las cuales agrupan otros tipos de datos</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">struct</span> <span style="color:#66d9ef">enum</span> {
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">genre_t</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">struct</span> _book{
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">book_t</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">struct</span> _member{
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">member_t</span>;
+</span></span></code></pre></div><p>Adicionalmente se cuenta con punteros, cada puntero tiene su respectivo tipo de dato al cual puede apuntar</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library <span style="color:#f92672">=</span> NULL;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">member_t</span> <span style="color:#f92672">*</span>members <span style="color:#f92672">=</span> NULL;
+</span></span><span style="display:flex;"><span>MemoryRecord <span style="color:#f92672">*</span>heap_memory_records <span style="color:#f92672">=</span> NULL;
+</span></span><span style="display:flex;"><span>FILE <span style="color:#f92672">*</span>file <span style="color:#f92672">=</span> <span style="color:#a6e22e">fopen</span>(filename, <span style="color:#e6db74">&#34;w&#34;</span>);
+</span></span></code></pre></div><p>En la estructura genre_t contamos con variables de enumaracion, donde cada una de ellas representa un genero de libro</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">enum</span> {
+</span></span><span style="display:flex;"><span>    FICTION,
+</span></span><span style="display:flex;"><span>    NON_FICTION,
+</span></span><span style="display:flex;"><span>    SCIENCE,
+</span></span><span style="display:flex;"><span>    HISTORY,
+</span></span><span style="display:flex;"><span>    FANTASY,
+</span></span><span style="display:flex;"><span>    BIOGRAPHY,
+</span></span><span style="display:flex;"><span>    OTHER
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">genre_t</span>;
+</span></span></code></pre></div><ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  Rodrigo López Rojas 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

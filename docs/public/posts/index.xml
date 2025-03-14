@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Rodrigo López Rojas</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Rodrigo López Rojas</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/practica0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/practica0/</guid>
+      <description>&lt;h1 id=&#34;practica-0-uso-de-repositorios&#34;&gt;Practica 0: Uso de repositorios&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introducción&#34;&gt;&lt;strong&gt;Introducción&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Esta práctica está dividida en tres secciones, en cada una de ellas se realizó algo diferente, pero que de igual forma complementa lo que es la implementación de repositorios y la implementación de Hugo para generar páginas estáticas.&lt;/p&gt;&#xA;&lt;h2 id=&#34;primera-sesión-sintaxis-y-uso-de-markdown&#34;&gt;&lt;strong&gt;Primera sesión: Sintaxis y uso de markdown&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;En la primera sesión se nos mostró de forma rápida las primeras herramientas que íbamos a utilizar durante el semestre. Estas fueron Hugo y Markdown, pero en esta sesión fue más que nada para aprender a usar markdown y descubrir las opciones que ofrecían, entre ellas está:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/practica1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/practica1/</guid>
+      <description>&lt;h1 id=&#34;practica-1-elementos-básicos-de-los-lenguajes-de-programación&#34;&gt;Practica 1: Elementos básicos de los lenguajes de programación&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introducción&#34;&gt;&lt;strong&gt;Introducción&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Para esta practica el profesor proporciono un codigo en C para gestionar una blibloteca, con el objetivo de identificar los elementos fundamentales de los lenguajes de programación que son: nombres, objetos, entornos, bloques, alcance, administración de memoria, expresiones, comandos, secuencia, selección, iteración, recursión, subprogramas, y tipos de datos.&lt;/p&gt;&#xA;&lt;h3 id=&#34;nombres-y-objetos&#34;&gt;&lt;strong&gt;Nombres y Objetos&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;h4 id=&#34;--biblitecac&#34;&gt;- bibliteca.c&lt;/h4&gt;&#xA;&lt;h5 id=&#34;variables-globales&#34;&gt;Variables globales&lt;/h5&gt;&#xA;&lt;p&gt;En el codigo se puede encontrar dos variables globales de tipo entero&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
