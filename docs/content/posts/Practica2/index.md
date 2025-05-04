@@ -10,7 +10,7 @@ En el codigo contamos con las siguientes clases:
 
 ```Python
 class Genre:
-class book:
+class Book:
 class DigitaBook(Book):
 class Member:
 class Library:
