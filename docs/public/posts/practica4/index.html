@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Práctica 4: Paradigma logico
 Introducción
-Prolog o PROgramming en LOG, es un lenguaje de programacion logico y declarativo.
-Funciona mas como una base de conocimientos donde dices que cosas son verdaderas y como se relacionan. Esto permite responder preguntas preguntas haciendo una
-busqueda (consultando) en una base de hechos y reglas para deducir una respuesta (si es que se puede).
-El leguaje Prolog tiene tres elementos diferentes:
+Prolog o PROgramming en LOG, es un lenguaje de programación lógico y declarativo.
+Funciona más como una base de conocimientos donde dices que cosas son verdaderas y cómo se relacionan. Esto permite responder preguntas preguntas haciendo una
+búsqueda (consultando) en una base de hechos y reglas para deducir una respuesta (si es que se puede).
+El lenguaje Prolog tiene tres elementos diferentes:
 Hechos: El hecho es un predicado que es verdadero.">
     <meta name="generator" content="Hugo 0.144.2">
     
@@ -44,25 +44,25 @@ Hechos: El hecho es un predicado que es verdadero.">
     <meta property="og:url" content="http://localhost:1313/Portafolio_ParadigmasProgramacion/posts/practica4/">
   <meta property="og:site_name" content="Rodrigo López Rojas">
   <meta property="og:title" content="Rodrigo López Rojas">
-  <meta property="og:description" content="Práctica 4: Paradigma logico Introducción Prolog o PROgramming en LOG, es un lenguaje de programacion logico y declarativo.
-Funciona mas como una base de conocimientos donde dices que cosas son verdaderas y como se relacionan. Esto permite responder preguntas preguntas haciendo una busqueda (consultando) en una base de hechos y reglas para deducir una respuesta (si es que se puede).
-El leguaje Prolog tiene tres elementos diferentes:
+  <meta property="og:description" content="Práctica 4: Paradigma logico Introducción Prolog o PROgramming en LOG, es un lenguaje de programación lógico y declarativo.
+Funciona más como una base de conocimientos donde dices que cosas son verdaderas y cómo se relacionan. Esto permite responder preguntas preguntas haciendo una búsqueda (consultando) en una base de hechos y reglas para deducir una respuesta (si es que se puede).
+El lenguaje Prolog tiene tres elementos diferentes:
 Hechos: El hecho es un predicado que es verdadero.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
 
   <meta itemprop="name" content="Rodrigo López Rojas">
-  <meta itemprop="description" content="Práctica 4: Paradigma logico Introducción Prolog o PROgramming en LOG, es un lenguaje de programacion logico y declarativo.
-Funciona mas como una base de conocimientos donde dices que cosas son verdaderas y como se relacionan. Esto permite responder preguntas preguntas haciendo una busqueda (consultando) en una base de hechos y reglas para deducir una respuesta (si es que se puede).
-El leguaje Prolog tiene tres elementos diferentes:
+  <meta itemprop="description" content="Práctica 4: Paradigma logico Introducción Prolog o PROgramming en LOG, es un lenguaje de programación lógico y declarativo.
+Funciona más como una base de conocimientos donde dices que cosas son verdaderas y cómo se relacionan. Esto permite responder preguntas preguntas haciendo una búsqueda (consultando) en una base de hechos y reglas para deducir una respuesta (si es que se puede).
+El lenguaje Prolog tiene tres elementos diferentes:
 Hechos: El hecho es un predicado que es verdadero.">
-  <meta itemprop="wordCount" content="116">
+  <meta itemprop="wordCount" content="3738">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Rodrigo López Rojas">
-  <meta name="twitter:description" content="Práctica 4: Paradigma logico Introducción Prolog o PROgramming en LOG, es un lenguaje de programacion logico y declarativo.
-Funciona mas como una base de conocimientos donde dices que cosas son verdaderas y como se relacionan. Esto permite responder preguntas preguntas haciendo una busqueda (consultando) en una base de hechos y reglas para deducir una respuesta (si es que se puede).
-El leguaje Prolog tiene tres elementos diferentes:
+  <meta name="twitter:description" content="Práctica 4: Paradigma logico Introducción Prolog o PROgramming en LOG, es un lenguaje de programación lógico y declarativo.
+Funciona más como una base de conocimientos donde dices que cosas son verdaderas y cómo se relacionan. Esto permite responder preguntas preguntas haciendo una búsqueda (consultando) en una base de hechos y reglas para deducir una respuesta (si es que se puede).
+El lenguaje Prolog tiene tres elementos diferentes:
 Hechos: El hecho es un predicado que es verdadero.">
 
 	
@@ -119,14 +119,732 @@ Hechos: El hecho es un predicado que es verdadero.">
     </header>
     <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="práctica-4-paradigma-logico">Práctica 4: Paradigma logico</h1>
 <h2 id="introducción"><strong>Introducción</strong></h2>
-<p>Prolog o PROgramming en LOG, es un lenguaje de programacion logico y declarativo.</p>
-<p>Funciona mas como una base de conocimientos donde dices que cosas son verdaderas y como se relacionan. Esto permite responder preguntas preguntas haciendo una
-busqueda (consultando) en una base de hechos y reglas para deducir una respuesta (si es que se puede).</p>
-<p>El leguaje Prolog tiene tres elementos diferentes:</p>
+<p>Prolog o PROgramming en LOG, es un lenguaje de programación lógico y declarativo.</p>
+<p>Funciona más como una base de conocimientos donde dices que cosas son verdaderas y cómo se relacionan. Esto permite responder preguntas preguntas haciendo una
+búsqueda (consultando) en una base de hechos y reglas para deducir una respuesta (si es que se puede).</p>
+<p>El lenguaje Prolog tiene tres elementos diferentes:</p>
 <p>Hechos: El hecho es un predicado que es verdadero.</p>
-<p>Reglas: Las reglas son extinciones de hechos que contienen clausulas condicionals. Para satisfacer una regla, estas condiciones deben cumplirse</p>
+<p>Reglas: Las reglas son extinciones de hechos que contienen cláusulas condicionales. Para satisfacer una regla, estas condiciones deben cumplirse</p>
 <p>Preguntas: Para ejecutar un programa prolog preguntas, estas preguntas pueden responderse mediante los hechos y las reglas dadas.</p>
-<h2 id="configuracion-de-entorno"><strong>Configuracion de entorno</strong></h2>
+<h2 id="descarga-de-gnu-prolog"><strong>Descarga de GNU Prolog</strong></h2>
+<p>Primero se descarga el archivo .exe para iniciar la instalación de GNU Prolog</p>
+<p><img src="./images/gnu1.png" alt=""></p>
+<p><img src="./images/gnuInstalacion.png" alt=""></p>
+<h2 id="hello-world"><strong>Hello world</strong></h2>
+<p>Después se realizará una prueba en el programa GNU donde se va a escribir &ldquo;Hello World&rdquo;</p>
+<p><img src="./images/primerHelloWorld.png" alt=""></p>
+<p>Posteriormente se cambiará el directorio a la carpeta donde vayamos a crear y guardar los códigos, en este caso si usara el mismo nombre que en el tutorial</p>
+<p><img src="./images/carpetaDirectorio.png" alt=""></p>
+<p>Se crea un archivo con la extensión  &ldquo;.pl&rdquo;</p>
+<p><img src="./images/archivoHelloWorld.png" alt=""></p>
+<p>Y se corre poniendo el nombre del archivo entre corchetes</p>
+<p><img src="./images/ejecucionHelloWorld.png" alt=""></p>
+<h2 id="basics"><strong>Basics</strong></h2>
+<p>En este capítulo se cubrirán los siguientes temas</p>
+<h3 id="hechos-reglas-y-consultas"><strong>Hechos, reglas y consultas</strong></h3>
+<p>Se puede definir un hecho como una relación explícita entre objetos y las propiedades que estos pueden tener, por lo tanto lo hechos son incondicionalmente verdaderos.</p>
+<p>Por otro lado, las normas se pueden definir como una regla o como una relación implícita entre objetos, por lo tanto son condicionalmente verdaderos.</p>
+<p>Las consultas son preguntas sobre las relaciones entre objetos y sus propiedades. La pregunta puede ser cualquier cosa.</p>
+<h3 id="base-de-conocimientos"><strong>Base de conocimientos</strong></h3>
+<p>Al recopilar los puntos anteriores (hechos, reglas y consultas) se forma una base de conocimiento. Así que se podría decir que una base de conocimiento es un conjunto de hechos y reglas.</p>
+<p>A continuación se presentan tres ejemplos de bases de conocimiento</p>
+<h4 id="knowledge-base-1"><strong>Knowledge Base 1</strong></h4>
+<p><img src="./images/knowledgeBase1Codigo.png" alt="">
+<img src="./images/knowledgeBase1Salida.png" alt=""></p>
+<h4 id="knowledge-base-2"><strong>Knowledge Base 2</strong></h4>
+<p><img src="./images/knowledgeBase2Codigo.png" alt="">
+<img src="./images/knowledgeBase2Salida.png" alt=""></p>
+<h4 id="knowledge-base-3"><strong>Knowledge Base 3</strong></h4>
+<p><img src="./images/knowledgeBase3DCodigo.png" alt="">
+<img src="./images/knowledgeBase3Salida.png" alt=""></p>
+<h2 id="relations"><strong>Relations</strong></h2>
+<p>Las relaciones pueden expresarse mediante hechos y reglas. Existen varios tipos de relaciones, algunas pueden ser también reglas.</p>
+<h3 id="relación-familiar"><strong>Relación familiar</strong></h3>
+<p>Este es un ejemplo de una relación compleja que se puede formar en Prolog, basado en el siguiente árbol genealógico</p>
+<p><img src="./images/ArbolFamily.png" alt=""></p>
+<p>Se mapeara en Prolog mediante hecho y reglas, el cual es el siguiente</p>
+<p><img src="./images/FamilyCodigo.png" alt=""></p>
+<p><img src="./images/FamilySalida.png" alt="">
+<img src="./images/FamilySalida2.png" alt=""></p>
+<p>Ahora se agregaran mas extensiones, donde se crearán relaciones de abuelos</p>
+<p><img src="./images/Family_extCodigo.png" alt=""></p>
+<p><img src="./images/Family_extSalida.png" alt="">
+<img src="./images/Family_extSalida2.png" alt="">
+<img src="./images/Family_extSalida3.png" alt=""></p>
+<h3 id="recursion-de-las-relaciones-familiares"><strong>Recursion de las relaciones familiares</strong></h3>
+<p>También se pueden crear relaciones recursivas</p>
+<p><img src="./images/Family_recCodigo.png" alt=""></p>
+<p><img src="./images/Family_recSalida.png" alt="">
+<img src="./images/Family_recSalida2.png" alt="">
+<img src="./images/Family_recSalida3.png" alt=""></p>
+<h2 id="data-objects"><strong>Data objects</strong></h2>
+<p>Los objetos de datos en Prolog se dividen en varias partes</p>
+<h3 id="atoms"><strong>Atoms</strong></h3>
+<p>Los átomos son una variante de las constantes, estas pueden ser cualquier nombre u objeto.</p>
+<h3 id="anonymous-variables"><strong>Anonymous Variables</strong></h3>
+<p>Las variables anónimas no tienen nombre, se escriben con un guión bajo (&rsquo;_&rsquo;). Cada variable anónima son diferentes.</p>
+<p><img src="./images/var_anonimaCodigo.png" alt="">
+<img src="./images/var_anonimaSalida.png" alt=""></p>
+<h2 id="operators"><strong>Operators</strong></h2>
+<h3 id="comparison-operators"><strong>Comparison operators</strong></h3>
+<p>Se utilizan para comparar dos ecuaciones o estados, por ejemplo:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Operator</th>
+          <th>Meaning</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>X &gt; Y</td>
+          <td>X is greater than Y</td>
+      </tr>
+      <tr>
+          <td>X &lt; Y</td>
+          <td>X is less than Y</td>
+      </tr>
+      <tr>
+          <td>X &gt;= Y</td>
+          <td>X is greater than or equal to Y</td>
+      </tr>
+      <tr>
+          <td>X =&lt; Y</td>
+          <td>X is less than or equal to Y</td>
+      </tr>
+      <tr>
+          <td>X =:= Y</td>
+          <td>the X and Y values are equal</td>
+      </tr>
+      <tr>
+          <td>X == Y</td>
+          <td>the X and Y values are not equal</td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="./images/OperatorComparison.png" alt=""></p>
+<h3 id="arithmetic-operators"><strong>Arithmetic Operators</strong></h3>
+<p>Se utilizan para realizar operaciones aritméticas</p>
+<table>
+  <thead>
+      <tr>
+          <th>Operator</th>
+          <th>Meaning</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>+</td>
+          <td>Addition</td>
+      </tr>
+      <tr>
+          <td>-</td>
+          <td>Subtraction</td>
+      </tr>
+      <tr>
+          <td>*</td>
+          <td>Multiplication</td>
+      </tr>
+      <tr>
+          <td>/</td>
+          <td>Division</td>
+      </tr>
+      <tr>
+          <td>**</td>
+          <td>Power</td>
+      </tr>
+      <tr>
+          <td>//</td>
+          <td>Integer Division</td>
+      </tr>
+      <tr>
+          <td>mod</td>
+          <td>Modulus</td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="./images/ArithmeticOperatorsCodigo.png" alt="">
+<img src="./images/ArithmeticOperatorsSalida.png" alt=""></p>
+<h2 id="loop--decision-making"><strong>Loop &amp; Decision Making</strong></h2>
+<h3 id="loops"><strong>Loops</strong></h3>
+<p>Se utilizan para ejecutar el bloque de código varias veces mediante logica de predicados recursiva, ejemplo:</p>
+<p><img src="./images/LoopCodigo.png" alt="">
+<img src="./images/LoopSalida.png" alt="">
+<img src="./images/LoopSalida2.png" alt=""></p>
+<p>Ahora un ejemplo de un bucle que tome los valores minimo y maximo utilizando between()</p>
+<p><img src="./images/Loop2Codigo.png" alt="">
+<img src="./images/Loop2Salida.png" alt=""></p>
+<h3 id="decision-making"><strong>Decision Making</strong></h3>
+<p>Son sentencias de decisión If-Then-Else. Cuando se cumpla una condición de realizará una tarea</p>
+<p><img src="./images/TestCodigo.png" alt="">
+<img src="./images/TestSalida.png" alt=""></p>
+<h2 id="conjunctions--disjunctions"><strong>Conjunctions &amp; Disjunctions</strong>\</h2>
+<h3 id="conjuction"><strong>Conjuction</strong></h3>
+<p>La conjunción (lógica AND) se puede implementar mediante el operador coma. De esta forma los predicados separados por coma se unen con la instrucción AND.</p>
+<h3 id="disjunction"><strong>Disjunction</strong></h3>
+<p>La disyunción (lógica OR) se puede implementar mediante el operador punto y coma. De esta forma, dos predicados separados por punto y coma se unen mediante la instrucción OR.</p>
+<p><img src="./images/conjdisjCodigo.png" alt="">
+<img src="./images/conjdisjSalida.png" alt=""></p>
+<h2 id="lists"><strong>Lists</strong></h2>
+<p>Las listas son una estructura de datos que puede utilizarse en diversos casos de programación no numérica. Se utilizan para almacenar átomos como una colección</p>
+<h3 id="representation-of-lists"><strong>Representation of Lists</strong></h3>
+<p>Para representar una estructura los elementos se encierra entre corchetes, cada elemento se separa por comas.</p>
+<p>El primer elemento de la lista se llamada cabecera de la lista, y la parte restante se llamada cola</p>
+<h3 id="basics-operations-on-lists"><strong>Basics Operations on Lists</strong></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Operations</th>
+          <th>Definition</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Membership Checking</td>
+          <td>Esta operación verifica si un elemento dado es miembro de una lista específica.</td>
+      </tr>
+      <tr>
+          <td>Length Calculation</td>
+          <td>Con esta operación, podemos encontrar la longitud de una lista.</td>
+      </tr>
+      <tr>
+          <td>Concatenation</td>
+          <td>Operación que se utiliza para unir o agregar dos listas.</td>
+      </tr>
+      <tr>
+          <td>Delete Items</td>
+          <td>Esta operación elimina el elemento especificado de una lista.</td>
+      </tr>
+      <tr>
+          <td>Append Items</td>
+          <td>La operación de agregar añade una lista dentro de otra (como un elemento).</td>
+      </tr>
+      <tr>
+          <td>Insert Items</td>
+          <td>Esta operación inserta un elemento dado en una lista.</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="membership-operation"><strong>Membership Operation</strong></h3>
+<p>Podemos comprobar si un miembro X está presente en la lista</p>
+<p><img src="./images/list_basicsCodigo.png" alt="">
+<img src="./images/list_basicsSalida.png" alt=""></p>
+<p>##3 <strong>Lenght Calculation</strong></p>
+<p>Se utiliza para hallar la longitud de la lista</p>
+<p>Ejemplo:</p>
+<p>Supongamos que el nombre del predicado es list_length(L,N) . Este usa L y N como argumentos de entrada. Esto contará los elementos de una lista L e instancia N con su número. Al igual que en nuestras relaciones anteriores con listas, conviene considerar dos casos:</p>
+<p>Si la lista está vacía, entonces la longitud es 0.</p>
+<p>Si la lista no está vacía, entonces L = [Cabeza|Cola], luego su longitud es 1 + longitud de Cola.</p>
+<p><img src="./images/list_basics2Codigo.png" alt="">
+<img src="./images/list_basics2Salida.png" alt=""></p>
+<h3 id="concatenation"><strong>Concatenation</strong></h3>
+<p>La concatenación de dos lista implica sumar los elementos de la segunda lista después de la primera</p>
+<p>Si la primera lista está vacía y la segundo lista es L, entonces la lista resultante será L</p>
+<p>Si la primera lista no está vacía, escriba esto como [Head|Tail], concatene Tail con L2 recursivamente y almacene en una nueva lista con el formato [Head|New List].</p>
+<p><img src="./images/list_concatCodigo.png" alt="">
+<img src="./images/list_concatSalida.png" alt=""></p>
+<h3 id="delete-form-list"><strong>Delete form list</strong></h3>
+<p>Supongamos que tenemos una lista L y un elemento X, tenemos que eliminar X de L. Entonces hay tres casos:</p>
+<p>Si X es el único elemento, luego de eliminarlo, devolverá una lista vacía.</p>
+<p>Si X es cabeza de L, la lista resultante será la parte de cola.</p>
+<p>Si X está presente en la parte de cola, entonces elimine desde allí recursivamente.</p>
+<p><img src="./images/list_basics3Codigo.png" alt="">
+<img src="./images/list_basics3Salida.png" alt=""></p>
+<h3 id="append-into-list"><strong>Append into List</strong></h3>
+<p>Sea A un elemento, L1 es una lista, la salida también será L1, cuando L1 ya tiene A.</p>
+<p>De lo contrario, la nueva lista será L2 = [A|L1].</p>
+<p><img src="./images/list_basics4Codigo.png" alt="">
+<img src="./images/list_basics4Salida.png" alt=""></p>
+<h3 id="insert-into-list"><strong>Insert into list</strong></h3>
+<p>Se utiliza para insertar un elemento X en la lista L, y la lista resultante será R</p>
+<p><img src="./images/list_basics5Codigo.png" alt="">
+<img src="./images/list_basics5Salida.png" alt=""></p>
+<h2 id="repositioning-operations-of-list-item"><strong>Repositioning operations of list item</strong></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Repositioning Operations</th>
+          <th>Definición</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Permutation</td>
+          <td>Esta operación cambiará las posiciones de los elementos de la lista y generará todos los resultados posibles.</td>
+      </tr>
+      <tr>
+          <td>Reverse Items</td>
+          <td>Esta operación organiza los elementos de una lista en orden inverso.</td>
+      </tr>
+      <tr>
+          <td>Shift Elements</td>
+          <td>Esta operación desplazará un elemento de una lista hacia la izquierda rotacionalmente.</td>
+      </tr>
+      <tr>
+          <td>Order Items</td>
+          <td>Esta operación verifica si la lista dada está ordenada o no.</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="permitation-operation"><strong>Permitation operation</strong></h3>
+<p>Esta operación permite cambiar la posición de los elementos de la lista y genera todos los resultados posibles</p>
+<p><img src="./images/list_reposCodigo.png" alt="">
+<img src="./images/list_reposSalida.png" alt="">
+<img src="./images/list_reposSalida2.png" alt=""></p>
+<h3 id="reverse-operation"><strong>Reverse Operation</strong></h3>
+<p>Se utiliza para invertir los elementos de una lista</p>
+<p><img src="./images/list_repos2Codigo.png" alt="">
+<img src="./images/list_repos2Salida.png" alt=""></p>
+<h3 id="shift-operation"><strong>Shift Operation</strong></h3>
+<p>Se utiliza para desplazar un elemento de una lista a la izquierda rotacionalmente</p>
+<p><img src="./images/list_repos3Codigo.png" alt="">
+<img src="./images/list_repos3Salida.png" alt=""></p>
+<h3 id="order-operation"><strong>Order Operation</strong></h3>
+<p>Se utiliza para verificar si la lista dada está ordenada o no</p>
+<p><img src="./images/list_repos4Codigo.png" alt="">
+<img src="./images/list_repos4Salida.png" alt=""></p>
+<h3 id="set-operations-on-lists"><strong>Set operations on lists</strong></h3>
+<p>Una cláusula que obtenga todos los subconjuntos posibles de un conjunto dado. Por lo tanto, si el conjunto es [a,b], el resultado será [], [a], [b], [a,b]. Para ello, crearemos una cláusula, list_subset(L, X). Esta cláusula tomará L y devolverá cada subconjunto en X.</p>
+<p><img src="./images/list_setCodigo.png" alt="">
+<img src="./images/list_setSalida.png" alt="">
+<img src="./images/list_setSalida2.png" alt="">
+<img src="./images/list_setSalida3.png" alt=""></p>
+<h3 id="union-operation"><strong>Union Operation</strong></h3>
+<p>Una cláusula llamada list_union(L1,L2,L3). Esta cláusula tomará L1 y L2, realizará la unión en ellas y almacenará el resultado en L3</p>
+<p><img src="./images/list_set2Codigo.png" alt="">
+<img src="./images/list_set2Salida.png" alt=""></p>
+<h3 id="interserction-operation"><strong>Interserction Operation</strong></h3>
+<p>Una cláusula llamada list_intersection(L1,L2,L3). Esta cláusula tomará L1 y L2, realizará la operación de intersección y almacenará el resultado en L3. La intersección devolverá los elementos presentes en ambas listas. Por lo tanto, L1 = [a,b,c,d,e], L2 = [a,e,i,o,u], y luego L3 = [a,e].</p>
+<p><img src="./images/list_set3Codigo.png" alt="">
+<img src="./images/list_set3Salida.png" alt=""></p>
+<h2 id="misc-operations-on-lists"><strong>Misc Operations on Lists</strong></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Miscellaneous Operations</th>
+          <th>Definición</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Even and Odd Length Finding</td>
+          <td>Verifica si la lista tiene un número par o impar de elementos.</td>
+      </tr>
+      <tr>
+          <td>Split</td>
+          <td>Divide una lista en dos listas, y estas listas tienen aproximadamente la misma longitud.</td>
+      </tr>
+      <tr>
+          <td>Maximum</td>
+          <td>Recupera el elemento con valor máximo de la lista dada.</td>
+      </tr>
+      <tr>
+          <td>Sum</td>
+          <td>Devuelve la suma de los elementos de la lista dada.</td>
+      </tr>
+      <tr>
+          <td>Merge Sort</td>
+          <td>Organiza los elementos de una lista dada en orden (utilizando el algoritmo Merge Sort).</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="even-and-odd-length-operation"><strong>Even and Odd Length Operation</strong></h3>
+<p>Dos operaciones que permiten verificar si la lista tiene un número par o impar de elementos</p>
+<p><img src="./images/list_miscCodigo.png" alt="">
+<img src="./images/list_miscSalida.png" alt=""></p>
+<h3 id="divide-list-operation"><strong>Divide List Operation</strong></h3>
+<p>Divide una lista en dos listas con una longitud similar</p>
+<p><img src="./images/list_misc2Codigo.png" alt="">
+<img src="./images/list_misc2Salida.png" alt=""></p>
+<h3 id="max-item-opetarion"><strong>Max Item Opetarion</strong></h3>
+<p>Se utiliza para encontrar el elemento máximo de una lista</p>
+<p><img src="./images/list_misc3Codigo.png" alt="">
+<img src="./images/list_misc3Salida.png" alt=""></p>
+<h3 id="list-sum-operation"><strong>List Sum Operation</strong></h3>
+<p>Se utiliza para devolver la suma de los elementos de una lista</p>
+<p><img src="./images/list_misc4Codigo.png" alt="">
+<img src="./images/list_misc4Salida.png" alt=""></p>
+<h3 id="merge-sort-on-a-list"><strong>Merge Sort on a List</strong></h3>
+<p><img src="./images/merge_sortCodigo.png" alt="">
+<img src="./images/merge_sortSalida.png" alt=""></p>
+<h2 id="recursion-and-structures"><strong>Recursion and structures</strong></h2>
+<h3 id="recursion"><strong>Recursion</strong></h3>
+<p>Es una técnica en la que un predicado se usa a sí mismo para encontrar el valor de verdad, por ejemplo:</p>
+<ul>
+<li>
+<p>is_digesting(X,Y) :- just_ate(X,Y).</p>
+</li>
+<li>
+<p>is_digesting(X,Y) :-just_ate(X,Z),is_digesting(Z,Y).</p>
+</li>
+</ul>
+<p>Este predicado es recursivo. Supongamos que <code>just_ate(deer, grass)</code>, lo que significa que <code>is_digesting(deer, grass)</code> es verdadero. Ahora bien, si decimos <code>is_digesting(tiger, grass)</code>, esto será verdadero si <code>is_digesting(tiger, grass) </code>: <code>just_ate(tiger, deer),</code>is_digesting(deer, grass)<code>, entonces la afirmación </code>is_digesting(tiger, grass)` también es verdadera.</p>
+<h3 id="structures"><strong>Structures</strong></h3>
+<p>Son objeto de datos que contienen múltiples componentes</p>
+<p>Para representar un punto, un segmento de línea y un triángulo usando la estructura en Prolog, podemos considerar las siguientes afirmaciones:</p>
+<ul>
+<li>
+<p>p1 − punto(1, 1)</p>
+</li>
+<li>
+<p>p2 − punto(2,3)</p>
+</li>
+<li>
+<p>S − seg( Pl, P2): seg( punto(1,1), punto(2,3))</p>
+</li>
+<li>
+<p>T − triángulo( punto(4,Z), punto(6,4), punto(7,1) )</p>
+</li>
+</ul>
+<h3 id="matching-in-prolog"><strong>Matching in Prolog</strong></h3>
+<p>Se utiliza para comprobar si dos términos dados son idénticos o si las variables de ambos términos pueden tener los mismo objetos tras ser instanciados</p>
+<p>Supongamos que la estructura de fecha se define como fecha(D,M,2020) = fecha(D1,abr,Y1), esto indica que D = D1, M = feb y Y1 = 2020.</p>
+<p>Se deben utilizar las siguientes reglas para comprobar si dos términos S y T coinciden:</p>
+<ul>
+<li>
+<p>Si S y T son constantes, S=T si ambos son los mismos objetos.</p>
+</li>
+<li>
+<p>Si S es una variable y T es cualquier cosa, T=S.</p>
+</li>
+<li>
+<p>Si T es variable y S es cualquier cosa, S=T.</p>
+</li>
+<li>
+<p>Si S y T son estructuras, S=T si</p>
+<ul>
+<li>S y T tienen el mismo funtor.</li>
+<li>Todos los componentes de sus argumentos correspondientes deben coincidir.</li>
+</ul>
+</li>
+</ul>
+<h3 id="binary-trees"><strong>Binary Trees</strong></h3>
+<p>Cada nodo tiene tres campos: datos y dos nodos. Un nodo sin estructura de hijo (nodo hoja) se escribe como node(value, nil, nil) ; un nodo con un solo hijo izquierdo se escribe como node(value, left_node, nil) ; un nodo con un solo hijo derecho se escribe como node(value, nil; right_node) ; y un nodo con ambos hijos tiene como node(value, left_node, right_node).</p>
+<p>La definición de la estructura es la siguiente:</p>
+<p>node(2, node(1,nil,nil), node(6, node(4,node(3,nil,nil), node(5,nil,nil)), node(7,nil,nil)))</p>
+<p><img src="./images/BinaryTree.png" alt=""></p>
+<h2 id="backtracking"><strong>Backtracking</strong></h2>
+<p>El retroceso es un procedimiento mediante el cual Prolog busca el valor de verdad de diferentes predicados comprobando si son correctos. El término retroceso es bastante común en el diseño de algoritmos y en diversos entornos de programación. En Prolog, hasta que alcanza el destino correcto, intenta retroceder. Una vez encontrado, se detiene.</p>
+<p><img src="./images/Backtracking.png" alt=""></p>
+<p>Ejemplo:</p>
+<p><img src="./images/backtrackCodigo.png" alt="">
+<img src="./images/BacktrackSalida.png" alt="">
+<img src="./images/Backtrack2Salida.png" alt=""></p>
+<p>Mientras se ejecuta el código se puede presionar el punto y coma (;)para obtener las siguientes respuestas una por una.</p>
+<h3 id="preventing-backtracking"><strong>Preventing Backtracking</strong></h3>
+<p>En tales casos el retroceso incontrolado puede causar una ineficiencia en un programa, para solucionara esto se utiliza la función <strong>Cut</strong></p>
+<p>Ejemplo de sin el uso de Cut</p>
+<p><img src="./images/backtrack2Codigo.png" alt="">
+<img src="./images/Backtrack2Salida.png" alt=""></p>
+<p>Ejemplo con uso del cut</p>
+<p><img src="./images/backtrack3Codigo.png" alt="">
+<img src="./images/Backtrack3Salida.png" alt=""></p>
+<h3 id="negation-as-failure"><strong>Negation as Failure</strong></h3>
+<p><img src="./images/negate_failCodigo.png" alt="">
+<img src="./images/negate_failSalida.png" alt=""></p>
+<h2 id="different-and-not"><strong>Different and Not</strong></h2>
+<p>El predicado diferente comprobada si dos argumentos dados son iguales. Si son iguales devolverá falso, de lo contrario devolver verdadero</p>
+<p>El predicado no se utiliza para negar una declaración, es decir, si una declaración es verdadera, será falsa. De lo contrario, si la declaración es falsa, será verdadera</p>
+<p>En Prolog, intentaremos expresar las declaraciones de la siguiente manera:</p>
+<ul>
+<li>Si X e Y coinciden, entonces diferente(X,Y) falla.</li>
+<li>De lo contrario, different(X,Y) tendrá éxito.</li>
+</ul>
+<p>La sintaxis del prólogo respectivo será la siguiente:</p>
+<ul>
+<li>diferente(X, X) :- !, falla.</li>
+<li>diferente(X, Y).</li>
+</ul>
+<p>También podemos expresarlo utilizando cláusulas disyuntivas como las que se indican a continuación:</p>
+<ul>
+<li>diferente(X, Y) :- X = Y, !, falla ; verdadero. % verdadero es el objetivo que siempre tiene éxito</li>
+</ul>
+<p>Ejemplo del ejemplo anterior en Prolog:</p>
+<p><img src="./images/diff_relCodigo.png" alt="">
+<img src="./images/diff_relSalida.png" alt=""></p>
+<p>Ahora un programa que utiliza las cláusulas disyuntivas</p>
+<p><img src="./images/diff_rel2Codigo.png" alt="">
+<img src="./images/diff_rel2Salida.png" alt=""></p>
+<h3 id="no-relation-in-prolog"><strong>No Relation in Prolog</strong></h3>
+<p>La relación &ldquo;no&rdquo; se utiliza para negar una declaración. Significa que si una declaración es verdadera, con &ldquo;no&rdquo; será falsa. O en caso de que una declaración sea falsa, con &ldquo;no&rdquo;, será verdadera</p>
+<p><img src="./images/no_relCodigo.png" alt="">
+<img src="./images/no_relSalida.png" alt=""></p>
+<h2 id="inputs-and-outputs"><strong>Inputs and Outputs</strong></h2>
+<h3 id="handling-input-and-output"><strong>Handling input and output</strong></h3>
+<h4 id="the-write-predicate"><strong>The write() Predicate</strong></h4>
+<p>Para escribir en la salida se puede utilizar el predicado write(). Toma como entrada y escribe el contenido en la consola</p>
+<p><img src="./images/TheWritePredicate.png" alt=""></p>
+<p>Se debe utilizar comillas simples para imprimir la cadena, si se usan comillas dobles devolver una lista de valores ASCII</p>
+<h4 id="the-read-predicate"><strong>The read() Predicate</strong></h4>
+<p>Se usa para leer desde la consola. Al escribir algo en la consola que puede tomarse como entrada y procesarse. También se puede utilizar para leer archivos.</p>
+<p><img src="./images/read_writeCodigo.png" alt="">
+<img src="./images/read_writeSalida.png" alt=""></p>
+<h4 id="the-tab-predicate"><strong>The tab() Predicate</strong></h4>
+<p>Se usa para añadir espacios en blanco al escribir algo. Toma un número como argumento e imprime esa cantidad de espacios en blanco.</p>
+<p><img src="./images/TheTabPredicate.png" alt=""></p>
+<h4 id="readingwriting-files"><strong>Reading/Writing Files</strong></h4>
+<p>Si se quiere escribir en un archivo, excepto en la consola, se puede escribir el predicado tell(). Este predicado toma el nombre del archivo como argumento. Si el archivo no existe, creo uno nuevo y se escribe en él. Ese archivo se abrirá hasta que se escriba el comando told.</p>
+<p><img src="./images/readingWritingSalida.png" alt="">
+<img src="./images/readingWritingFiletxt.png" alt=""></p>
+<h4 id="the-see-and-seen"><strong>The see and seen</strong></h4>
+<p>Se puede utilizar el predicado &ldquo;see()&rdquo; para leer desde un archivo. Este tomará como entrada el nombre del archivo. Una vez completada la operación de lectura se usará el comando &ldquo;see&rdquo;</p>
+<p><img src="./images/sample_predicateSalida.png" alt="">
+<img src="./images/sample_predicateTexto.png" alt=""></p>
+<h4 id="processing-files-of-terms"><strong>Processing files of terms</strong></h4>
+<p>Si se quiere leer/procesar todo el contenido de un archivo, se necesita escribir una cláusula para procesar el archivos (process_file) hasta llegar al final del archivo</p>
+<p><img src="./images/process_fileCodigo.png" alt="">
+<img src="./images/process_fileSalida.png" alt=""></p>
+<h4 id="manipulating-characters"><strong>Manipulating characters</strong></h4>
+<p>Usando read() y  write() se puede leer o escribir el valor de átomos, predicados, cadenas, etc.</p>
+<p>Se puede utilizar el put(C) para escribir un carácter a la vez en el flujo de salida actual. &ldquo;C&rdquo; puede ser un carácter o u codigo ASCII.</p>
+<p><img src="./images/manipulatingCharacters.png" alt=""></p>
+<p>Para leer un solo carácter del flujo de entrada actual se puede utilizar el predicado get_char(C). Si se quiere el código ASCII se puede utilizar get_code</p>
+<p><img src="./images/TheGetChar.png" alt=""></p>
+<h4 id="constructing-atoms"><strong>Constructing Atoms</strong></h4>
+<p>La construcción de un átomo implica crear un átomo a partir de una lista de caracteres o una lista de valores ASCII. Para ello se utilizan los predicados atom_char() y atom_codes(). El primer argumento es una variable y el segundo una lista.</p>
+<p><img src="./images/constructingAtoms.png" alt=""></p>
+<h4 id="decomposing-atoms"><strong>Decomposing Atoms</strong></h4>
+<p>A partir de un átomo se puede obtener una secuencia de caracteres o una secuencia de códigos ASCII. Para ello se utiliza igualmente atom_chars() y atom_codes(). Pero en ambos casos el primer argumento debe ser el átomo y el segundo una variable.</p>
+<p><img src="./images/DescomposingAtoms.jpeg" alt=""></p>
+<h4 id="the-consult-in-prolog"><strong>The consult in Prolog</strong></h4>
+<p>La consulta es una técnica que se utiliza para fusionar predicado de diferentes archivos. Se puede utilizar el predicado consult() y pasar el nombre del archivo para adjuntar los predicados</p>
+<p><img src="./images/prog1Codigo.png" alt="">
+<img src="./images/prog2Codigo.png" alt=""></p>
+<p><img src="./images/prog1y2Salida.png" alt=""></p>
+<h2 id="built-in-predicates"><strong>Built-In Predicates</strong></h2>
+<p>Existen tres tipos de predicados predefinidos:</p>
+<ul>
+<li>Términos de identificación</li>
+<li>Estructuras en descomposición</li>
+<li>Recopilando todas las soluciones</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>Predicate</th>
+          <th>Descripción</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>var(X)</td>
+          <td>tiene éxito si X es actualmente una variable no instanciada.</td>
+      </tr>
+      <tr>
+          <td>novar(X)</td>
+          <td>tiene éxito si X no es una variable o ya está instanciada.</td>
+      </tr>
+      <tr>
+          <td>atom(X)</td>
+          <td>es verdadero si X representa actualmente un átomo.</td>
+      </tr>
+      <tr>
+          <td>number(X)</td>
+          <td>es verdadero si X representa actualmente un número.</td>
+      </tr>
+      <tr>
+          <td>integer(X)</td>
+          <td>es verdadero si X representa actualmente un número entero.</td>
+      </tr>
+      <tr>
+          <td>float(X)</td>
+          <td>es verdadero si X representa actualmente un número real.</td>
+      </tr>
+      <tr>
+          <td>atomic(X)</td>
+          <td>es verdadero si X representa actualmente un número o un átomo.</td>
+      </tr>
+      <tr>
+          <td>compound(X)</td>
+          <td>es verdadero si X representa actualmente una estructura.</td>
+      </tr>
+      <tr>
+          <td>ground(X)</td>
+          <td>tiene éxito si X no contiene ninguna variable no instanciada.</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="the-varx-predicate"><strong>The var(X) Predicate</strong></h3>
+<p>Si X no se inicializa se mostrará como verdadero, si no, se mostrará como falso.</p>
+<p><img src="./images/TheVarPredicate.png" alt=""></p>
+<h3 id="the-novarx-predicate"><strong>The novar(X) Predicate</strong></h3>
+<p>Si X no se inicializa se mostrará como falso, si no, se mostrará como verdadero.</p>
+<p><img src="./images/TheNovarPredicate.png" alt=""></p>
+<h3 id="the-atomx-predicate"><strong>The atom(X) Predicate</strong></h3>
+<p>Devolverá verdadero cuando se pase como X un término no variable con argumento 0 y un término no numérico, de lo contrario sera falso</p>
+<p><img src="./images/TheAtomPredicate.png" alt=""></p>
+<h3 id="the-numberx-predicate"><strong>The number(X) Predicate</strong></h3>
+<p>Esto devolverá verdadero si X representa cualquier número, de lo contrario sera falso</p>
+<p><img src="./images/TheNumberPredicate.png" alt=""></p>
+<h3 id="the-integerx-predicate"><strong>The integer(X) Predicate</strong></h3>
+<p>Esto devolverá verdadero cuando X sea un valor entero positivo o negativo, de lo contrario sera falso</p>
+<p><img src="./images/TheIntegerPredicate.png" alt=""></p>
+<h3 id="the-floatx-predicate"><strong>The float(X) Predicate</strong></h3>
+<p>Esto devolverá verdadero si X es un número de punto flotante, de lo contrario sera falso</p>
+<p><img src="./images/TheFloatPredicate.png" alt=""></p>
+<h3 id="the-atomicx-predicate"><strong>The atomic(X) Predicate</strong></h3>
+<p>Es similar a atom(X), solo que acepta números</p>
+<p><img src="./images/TheAtomicPredicate.png" alt=""></p>
+<h3 id="the-compoundx-predicate"><strong>The compound(X) Predicate</strong></h3>
+<p>Si atomic(X) falla, los términos son una variable no instanciada o un término compuesto. &ldquo;Compound&rdquo; será verdadero cuando pasemos una estructura compuesta</p>
+<p><img src="./images/TheCompoundPredicate.png" alt=""></p>
+<h3 id="the-groundx-predicate"><strong>The ground(X) Predicate</strong></h3>
+<p>Esto devolverá verdadero si X no contiene variables no instanciadas. También verifica dentro de los términos compuestos, de lo contrario, devuelve falso</p>
+<p><img src="./images/TheGroundPredicate.png" alt=""></p>
+<h3 id="decomposing-structures"><strong>Decomposing Structures</strong></h3>
+<p>Al usar estructuras compuestas, no podemos usar una variable para verificar o crear un funtor. Devolverá un error. Por lo tanto el nombre del funtor no puede representarse mediante una variable</p>
+<p><img src="./images/DecomposingStructures.png" alt=""></p>
+<h3 id="the-functortfn-predicate"><strong>The functor(T,F,N) Predicate</strong></h3>
+<p>Devuelve verdadero si F es el functor principal de T y N es la aridad (número de atributos) de F</p>
+<p><img src="./images/TheFunctorPredicate.png" alt=""></p>
+<h3 id="the-argnterma-predicate"><strong>The arg(N,Term,A) Predicate</strong></h3>
+<p>Esto devuelve verdadero si A es el enésimo argumento de Term. De lo contrario, devuelve falso</p>
+<p><img src="./images/TheArgPredicate.png" alt=""></p>
+<p><img src="./images/TheArgPredicate2.png" alt=""></p>
+<h3 id="the-2-predicate"><strong>The ../2 Predicate</strong></h3>
+<p>Toma dos argumentos.Por lo tanto, Term = .. L.Esto es cierto si L es una lista que contiene el funtor de Term, seguido de sus argumentos</p>
+<p><img src="./images/TheMitadPredicate.png" alt=""></p>
+<p><img src="./images/TheMitadPredicate2.png" alt=""></p>
+<h3 id="collecting-all-the-solutions"><strong>Collecting All the Solutions</strong></h3>
+<p>Existen tres predicados integrados que ayudan a obtener los resultados. Estos son:</p>
+<ul>
+<li>findall/3</li>
+<li>setoff/3</li>
+<li>bagof/3</li>
+</ul>
+<h4 id="the-findall3-predicate"><strong>The findall/3 Predicate</strong></h4>
+<p>Este predicado se utiliza para crear una lista de todas las soluciones X, a partir del predicado P. La lista devuelta será L. Por lo tanto, interpretamos esto como «encontrar todas las X, tales que X sea una solución del predicado P y colocar la lista de resultados en L». Aquí, este predicado almacena los resultados en el mismo orden en que Prolog los encuentra. Si hay soluciones duplicadas, todas se incluirán en la lista resultante; si hay infinitas soluciones, el proceso nunca terminará.</p>
+<p>Ahora también podemos avanzar en ellos. El segundo argumento, que es el objetivo, podría ser un objetivo compuesto. Entonces, la sintaxis sería findall(X, (Predicado en X, otro objetivo), L)</p>
+<p><img src="./images/TheFindall3Predicate.png" alt=""></p>
+<h4 id="the-setoff3-predicate"><strong>The setoff/3 Predicate</strong></h4>
+<p>Setof/3 también es como findall/3, pero aquí elimina todas las salidas duplicadas y se ordenarán las respuestas.</p>
+<p>Si se utiliza alguna variable en el objetivo, ésta no aparecerá en el primer argumento, setof/3 devolverá un resultado separado para cada posible instancia de esa variable.</p>
+<p><img src="./images/TheSetof3PredicateCodigo.png" alt=""></p>
+<p><img src="./images/TheSetof3PredicateSalida.png" alt=""></p>
+<p>Podemos usar la llamada anidada de setof/3 para recopilar los resultados individuales</p>
+<p><img src="./images/TheSetof3PredicateSalida2.png" alt=""></p>
+<p>Ahora bien, si no nos importa una variable que no aparece en el primer argumento, podemos usar el siguiente ejemplo:</p>
+<p><img src="./images/TheSetof3PredicateSalida3.png" alt=""></p>
+<h4 id="the-bagof3-predicate"><strong>The bagof/3 Predicate</strong></h4>
+<p>Bagof/3 es como setof/3, pero aquí no elimina las salidas duplicadas y es posible que las respuestas no se ordenen.</p>
+<p><img src="./images/TheBagOf3Salida.png" alt=""></p>
+<p>Bagof/3 es diferente de findall/3, ya que genera resultados separados para todas las variables del objetivo que no aparecen en el primer argumento</p>
+<p><img src="./images/TheBagOf3Salida2.png" alt=""></p>
+<h3 id="mathematical-predicates"><strong>Mathematical Predicates</strong></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Predicado</th>
+          <th>Descripción</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>random(L,H,X).</td>
+          <td>Obtiene un valor aleatorio entre L y H</td>
+      </tr>
+      <tr>
+          <td>between(L,H,X).</td>
+          <td>Obtiene todos los valores entre L y H</td>
+      </tr>
+      <tr>
+          <td>succ(X,Y).</td>
+          <td>Suma 1 y lo asigna a X</td>
+      </tr>
+      <tr>
+          <td>abs(X).</td>
+          <td>Obtiene el valor absoluto de X</td>
+      </tr>
+      <tr>
+          <td>max(X,Y).</td>
+          <td>Obtiene el valor más grande entre X y Y</td>
+      </tr>
+      <tr>
+          <td>min(X,Y).</td>
+          <td>Obtiene el valor más pequeño entre X y Y</td>
+      </tr>
+      <tr>
+          <td>round(X).</td>
+          <td>Redondea un valor cercano a X</td>
+      </tr>
+      <tr>
+          <td>truncate(X).</td>
+          <td>Convierte un número flotante a entero, eliminando la parte fraccionaria</td>
+      </tr>
+      <tr>
+          <td>floor(X).</td>
+          <td>Redondea hacia abajo</td>
+      </tr>
+      <tr>
+          <td>ceiling(X).</td>
+          <td>Redondea hacia arriba</td>
+      </tr>
+      <tr>
+          <td>sqrt(X).</td>
+          <td>Raíz cuadrada</td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="./images/MathematicalPredicate2.png" alt=""></p>
+<h2 id="tree-data-structure-case-study"><strong>Tree Data Structure (Case Study)</strong></h2>
+<p>Suponiendo que se tiene un árbol como el siguiente</p>
+<p><img src="./images/ArbolCaseStudy.png" alt=""></p>
+<p>Se van a implementar las siguientes operaciones</p>
+<ul>
+<li>op(500, xfx, &lsquo;is_parent&rsquo;).</li>
+<li>op(500, xfx, &lsquo;is_sibling_of&rsquo;).</li>
+<li>op(500, xfx, &lsquo;is_at_same_level&rsquo;).</li>
+<li>And another predicate namely leaf_node(Node)</li>
+</ul>
+<p>En estos operadores, he visto parámetros como (500, xfx, &lt;nombre_del_operador&gt;). El primer argumento (aquí 500) es la prioridad de ese operador. «xfx» indica que se trata de un operador binario y &lt;nombre_del_operador&gt; es el nombre del operador.</p>
+<p>Estos operadores se pueden usar para definir la base de datos del árbol. Podemos usarlos de la siguiente manera:</p>
+<ul>
+<li>
+<p>is_parent(a, b): indica que el nodo a es el padre del nodo b.</p>
+</li>
+<li>
+<p>is_sibling_of(X, Y): indica que X es hermano de Y. Es decir, si existe un nodo Z que es padre tanto de X como de Y, y X y Y son distintos, entonces son hermanos.</p>
+</li>
+<li>
+<p>leaf_node(Node): un nodo se considera hoja si no tiene hijos.</p>
+</li>
+<li>
+<p>is_at_same_level(X, Y): verifica si los nodos X y Y están en el mismo nivel. Es decir, si X y Y son iguales, devuelve verdadero; de lo contrario, si W es padre de X, Z es padre de Y, y W y Z están al mismo nivel, entonces X y Y también lo están.</p>
+</li>
+</ul>
+<p><img src="./images/case_treeCodigo.png" alt=""></p>
+<p><img src="./images/case_treeCodigo2.png" alt=""></p>
+<p><img src="./images/case_treeSalida.jpeg" alt=""></p>
+<h3 id="more-on-tree-data-structure"><strong>More on Tree Data Structure</strong></h3>
+<p>Ahora se verán algunas operaciones más que se realizarán en la estructura de datos de árbol dado anteriormente</p>
+<ul>
+<li>
+<p>path(Node): Muestra la ruta desde el nodo raíz hasta el nodo dado. Para solucionar esto, suponga que X es el padre del nodo, busque path(X) y escriba X. Al llegar al nodo raíz &ldquo;a&rdquo;, se detendrá.</p>
+</li>
+<li>
+<p>locate(Node): Esto localizará un nodo (Node) desde la raíz del árbol. En este caso, llamaremos a path(Node) y escribiremos el nodo.</p>
+</li>
+</ul>
+<p>Considerando este árbol</p>
+<p><img src="./images/ArbolCaseStudy.png" alt=""></p>
+<p><img src="./images/case_treemoreCodigo.png" alt=""></p>
+<p><img src="./images/case_tree_moreSalida.png" alt=""></p>
+<h3 id="advances-in-tree-data-structures"><strong>Advances in Tree Data Structures</strong></h3>
+<p>Ya definimos el árbol anteriormente, por lo que consultaremos el código actual para ejecutar este conjunto de operaciones sin redefinir nuevamente la base de datos del árbol.</p>
+<p>Crearemos algunos predicados de la siguiente manera:</p>
+<ul>
+<li>
+<p>ht(Nodo,H). Calcula la altura. También verifica si un nodo es hoja; de ser así, establece la altura H en 0. De lo contrario, calcula recursivamente la altura de los hijos del nodo y les suma 1.</p>
+</li>
+<li>
+<p>max([X|R], M,A). Calcula el elemento máximo de la lista y un valor M. Si M es el máximo, devuelve M; de lo contrario, devuelve el elemento máximo de la lista mayor que M. Para solucionar esto, si la lista está vacía, devuelve M como el elemento máximo; de lo contrario, comprueba si Head es mayor que M. Si es así, llama a max() usando la parte final y el valor X; de lo contrario, llama a max() usando la parte final y el valor M.</p>
+</li>
+<li>
+<p>height(N,H). Esto usa el predicado setof/3. Esto encontrará el conjunto de resultados usando el objetivo ht(N,Z) para la plantilla Z y lo almacenará en la variable de tipo lista llamada Set. Ahora encuentre el máximo de Set, con el valor 0, y almacene el resultado en H.</p>
+</li>
+</ul>
+<p><img src="./images/case_tree_advCodigo.png" alt=""></p>
+<p><img src="./images/case_tree_advSalida.png" alt=""></p>
 <ul class="pa0">
   
 </ul>

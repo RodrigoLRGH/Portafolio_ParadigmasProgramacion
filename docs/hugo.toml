@@ -3,5 +3,8 @@ languageCode = 'en-us'
 title = 'Rodrigo López Rojas'
 theme = 'anake'
 
+[pagination]
+  pagerSize = 5
+
 [params]
   author = "Rodrigo López Rojas"

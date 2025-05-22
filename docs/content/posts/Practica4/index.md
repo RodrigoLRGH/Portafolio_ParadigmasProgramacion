@@ -231,7 +231,7 @@ Podemos comprobar si un miembro X está presente en la lista
 ![](./images/list_basicsCodigo.png)
 ![](./images/list_basicsSalida.png)
 
-##3 **Lenght Calculation**
+### **Lenght Calculation**
 
 Se utiliza para hallar la longitud de la lista
 
@@ -331,8 +331,6 @@ Se utiliza para verificar si la lista dada está ordenada o no
 Una cláusula que obtenga todos los subconjuntos posibles de un conjunto dado. Por lo tanto, si el conjunto es [a,b], el resultado será [], [a], [b], [a,b]. Para ello, crearemos una cláusula, list_subset(L, X). Esta cláusula tomará L y devolverá cada subconjunto en X.
 
 ![](./images/list_setCodigo.png)
-![](./images/list_setSalida.png)
-![](./images/list_setSalida2.png)
 ![](./images/list_setSalida3.png)
 
 ### **Union Operation**
