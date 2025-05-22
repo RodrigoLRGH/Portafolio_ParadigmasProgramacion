@@ -1,3 +1,6 @@
+---
+draft: false
+---
 # Practica 2: Programacion orientado a objetos
 
 ## **Introducción**

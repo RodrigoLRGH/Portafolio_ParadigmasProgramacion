@@ -1,3 +1,6 @@
+---
+draft: false
+---
 # Practica 1: Elementos básicos de los lenguajes de programación
 
 ## **Introducción**

@@ -1,3 +1,6 @@
+---
+draft: false
+---
 # Practica 0: Uso de repositorios
 
 ## **Introducción**

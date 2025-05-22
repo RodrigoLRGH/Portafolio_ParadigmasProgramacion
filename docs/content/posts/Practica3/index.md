@@ -1,3 +1,7 @@
+---
+draft: false
+---
+
 # Práctica 3: Funcionamiento de Haskell
 
 ## **Introducción**

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/Portafolio_ParadigmasProgramacion/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=Portafolio_ParadigmasProgramacion/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Rodrigo López Rojas</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Práctica 3: Funcionamiento de Haskell
+Introducción
+En esta práctica se van a seguir los pasos de un blog para aprender a crear una aplicación de tareas pendientes con Haskell y Stack.
+
+- Proceso al crear la aplicacion
+1. Iniciar el entorno de desarrollo de Haskell con Stack
+Utilizar el comando $ stack new todo
+
+
+Verificar la creación de los archivos con $ ls todo
+
+Modificar el archivo package.yaml
+Agregar esto a dependencies:
+-dotenv
+-open-browser">
+    <meta name="generator" content="Hugo 0.144.2">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    <meta name="author" content="Rodrigo López Rojas">
+    
+
+    
+<link rel="stylesheet" href="/Portafolio_ParadigmasProgramacion/ananke/css/main.min.css" >
+
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/Portafolio_ParadigmasProgramacion/posts/practica3/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/Portafolio_ParadigmasProgramacion/posts/practica3/">
+  <meta property="og:site_name" content="Rodrigo López Rojas">
+  <meta property="og:title" content="Rodrigo López Rojas">
+  <meta property="og:description" content="Práctica 3: Funcionamiento de Haskell Introducción En esta práctica se van a seguir los pasos de un blog para aprender a crear una aplicación de tareas pendientes con Haskell y Stack.
+- Proceso al crear la aplicacion 1. Iniciar el entorno de desarrollo de Haskell con Stack Utilizar el comando $ stack new todo Verificar la creación de los archivos con $ ls todo Modificar el archivo package.yaml Agregar esto a dependencies: -dotenv -open-browser">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+  <meta itemprop="name" content="Rodrigo López Rojas">
+  <meta itemprop="description" content="Práctica 3: Funcionamiento de Haskell Introducción En esta práctica se van a seguir los pasos de un blog para aprender a crear una aplicación de tareas pendientes con Haskell y Stack.
+- Proceso al crear la aplicacion 1. Iniciar el entorno de desarrollo de Haskell con Stack Utilizar el comando $ stack new todo Verificar la creación de los archivos con $ ls todo Modificar el archivo package.yaml Agregar esto a dependencies: -dotenv -open-browser">
+  <meta itemprop="wordCount" content="1639">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Rodrigo López Rojas">
+  <meta name="twitter:description" content="Práctica 3: Funcionamiento de Haskell Introducción En esta práctica se van a seguir los pasos de un blog para aprender a crear una aplicación de tareas pendientes con Haskell y Stack.
+- Proceso al crear la aplicacion 1. Iniciar el entorno de desarrollo de Haskell con Stack Utilizar el comando $ stack new todo Verificar la creación de los archivos con $ ls todo Modificar el archivo package.yaml Agregar esto a dependencies: -dotenv -open-browser">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/Portafolio_ParadigmasProgramacion/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Rodrigo López Rojas
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1"></h1>
+      
+      <p class="tracked"><strong>Rodrigo López Rojas</strong>
+      </p>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="práctica-3-funcionamiento-de-haskell">Práctica 3: Funcionamiento de Haskell</h1>
+<h2 id="introducción"><strong>Introducción</strong></h2>
+<p>En esta práctica se van a seguir los pasos de un blog para aprender a crear una aplicación de tareas pendientes con Haskell y Stack.</p>
+<h2></h2>
+<h2 id="--proceso-al-crear-la-aplicacion">- Proceso al crear la aplicacion</h2>
+<h3 id="1-iniciar-el-entorno-de-desarrollo-de-haskell-con-stack"><strong>1. Iniciar el entorno de desarrollo de Haskell con Stack</strong></h3>
+<h4 id="utilizar-el-comando"><strong>Utilizar el comando <code>$ stack new todo</code></strong></h4>
+<p><img src="./images/stacknewtodo.png" alt=""><br>
+<img src="./images/stacknewtododos.png" alt=""></p>
+<h4 id="verificar-la-creación-de-los-archivos-con"><strong>Verificar la creación de los archivos con <code>$ ls todo</code></strong></h4>
+<p><img src="./images/lstodo.png" alt=""></p>
+<h4 id="modificar-el-archivo-packageyaml"><strong>Modificar el archivo package.yaml</strong></h4>
+<p>Agregar esto a dependencies:
+-dotenv
+-open-browser</p>
+<p><img src="./images/editpackage.png" alt=""></p>
+<h4 id="primer-uso-de"><strong>Primer uso de <code>$ stack test</code></strong></h4>
+<p><img src="./images/stacktestprimero.png" alt=""></p>
+<h4 id="primer-uso-de-1"><strong>Primer uso de <code>$ stack run</code></strong></h4>
+<p><img src="./images/primerstackrun.png" alt=""></p>
+<p>Se puede observar que el proyecto se construyo y compilo en la consola</p>
+<h3 id="2-escribir-la-aplicación-todo-con-haskell"><strong>2. Escribir la aplicación Todo con Haskell</strong></h3>
+<h4 id="editar-el-archivo"><strong>Editar el archivo <code>Main.hs</code></strong></h4>
+<p><img src="./images/editmainhsprimero.png" alt=""></p>
+<p>Los putStrLn sirve para mostrar que comandos se pueden usar en la aplicacion de tareas pendientes.</p>
+<p>La parte logica principal se manejara con prompt una parte y se importara desde el archivo Lib.sh</p>
+<h4 id="editar-el-archivo-1"><strong>Editar el archivo <code>Lib.hs</code></strong></h4>
+<p><img src="./images/editlibprimero.png" alt=""></p>
+<h4 id="ejecutar-nuevamente"><strong>Ejecutar nuevamente <code>$ stack run</code></strong></h4>
+<p>Prueba para observar la aplicacion de tareas pendientes de Haskel.</p>
+<p><img src="./images/stackrunsegundo.png" alt=""></p>
+<h4 id="incluir-una-tarea-pendiente"><strong>Incluir una tarea pendiente</strong></h4>
+<p><img src="./images/writeablogpost.png" alt=""></p>
+<h4 id="editar-el-archivo-2"><strong>Editar el archivo <code>Spec.hs</code></strong></h4>
+<p><img src="./images/editspechtest.png" alt=""></p>
+<h4 id="ejecutar-el-comando"><strong>Ejecutar el comando <code>$ stack test</code> nuevamente</strong></h4>
+<p><img src="./images/stacktestsegundo.png" alt=""></p>
+<h3 id="3-aprender-a-usar-los-paquetes-de-haskell"><strong>3. Aprender a usar los paquetes de Haskell</strong></h3>
+<h4 id="crear-un-archivo"><strong>Crear un archivo <code>.env</code></strong></h4>
+<h4 id="actualizar-el-archivo"><strong>Actualizar el archivo <code>Main.hs</code></strong></h4>
+<p><img src="./images/editmaindos.png" alt=""></p>
+<h4 id="ejecutar-nuevamente-1"><strong>Ejecutar nuevamente</strong></h4>
+<p><img src="./images/stackfunfinal.png" alt=""></p>
+<h2 id="--funcionamiento-de-la-aplicacion-de-haskell">- Funcionamiento de la aplicacion de Haskell</h2>
+<h3 id="codigos-en-configuracion-del-enterono"><strong>Codigos en configuracion del enterono</strong></h3>
+<h4 id="packageyaml"><strong>package.yaml</strong></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">dependencies</span>:
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">base &gt;= 4.7 &amp;&amp; &lt; 5</span> <span style="color:#75715e"># Paquete base del sistema</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">dotenv  </span> <span style="color:#75715e"># Para cargar variables de entorno desde .env</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">open-browser</span> <span style="color:#75715e"># Para abrir el navegador desde el cdigo</span>
+</span></span></code></pre></div><h3 id="codigo-en-la-aplicacion-todo"><strong>Codigo en la aplicacion Todo</strong></h3>
+<h4 id="mainhs"><strong>Main.hs</strong></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Haskell" data-lang="Haskell"><span style="display:flex;"><span><span style="color:#75715e">-- Punto de entrada del programa principal</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> Main <span style="color:#66d9ef">where</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Importar la funcion &#39;prompt&#39; desde el módulo Lib</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> Lib (<span style="color:#a6e22e">prompt</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Funcion principal del programa</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">main</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">IO</span> ()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">main</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">-- Mostrar al usuario los comandos disponibles</span>
+</span></span><span style="display:flex;"><span>    putStrLn <span style="color:#e6db74">&#34;Commands:&#34;</span>
+</span></span><span style="display:flex;"><span>    putStrLn <span style="color:#e6db74">&#34;+ &lt;String&gt; - Add a TODO entry&#34;</span>   <span style="color:#75715e">-- Agregar una entrada nueva al TODO</span>
+</span></span><span style="display:flex;"><span>    putStrLn <span style="color:#e6db74">&#34;- &lt;Int&gt;    - Delete the numbered entry&#34;</span>  <span style="color:#75715e">-- Eliminar una entrada por numero</span>
+</span></span><span style="display:flex;"><span>    putStrLn <span style="color:#e6db74">&#34;s &lt;Int&gt;    - Show the numbered entry&#34;</span>    <span style="color:#75715e">-- Mostrar una entrada especifica</span>
+</span></span><span style="display:flex;"><span>    putStrLn <span style="color:#e6db74">&#34;e &lt;Int&gt;    - Edit the numbered entry&#34;</span>    <span style="color:#75715e">-- Editar una entrada especifica</span>
+</span></span><span style="display:flex;"><span>    putStrLn <span style="color:#e6db74">&#34;l          - List todo&#34;</span>    <span style="color:#75715e">-- Listar todas las entradas TODO</span>
+</span></span><span style="display:flex;"><span>    putStrLn <span style="color:#e6db74">&#34;r          - Reverse todo&#34;</span> <span style="color:#75715e">-- Revertir el orden de la lista</span>
+</span></span><span style="display:flex;"><span>    putStrLn <span style="color:#e6db74">&#34;c          - Clear todo&#34;</span>   <span style="color:#75715e">-- Borrar toda la lista</span>
+</span></span><span style="display:flex;"><span>    putStrLn <span style="color:#e6db74">&#34;q          - Quit&#34;</span>         <span style="color:#75715e">-- Salir del programa</span>
+</span></span><span style="display:flex;"><span>    prompt <span style="color:#66d9ef">[]</span> <span style="color:#75715e">-- Llamar a &#39;prompt&#39; con una lista vacia para iniciar el ciclo de comandos</span>
+</span></span></code></pre></div><h4 id="libhs"><strong>Lib.hs</strong></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Haskell" data-lang="Haskell"><span style="display:flex;"><span><span style="color:#75715e">-- Modulo Lib define funciones auxiliares para manejar la lista de TODOs.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> Lib
+</span></span><span style="display:flex;"><span>  ( <span style="color:#a6e22e">prompt</span>,       <span style="color:#75715e">-- Funcion principal para interactuar con el usuario</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">editIndex</span>     <span style="color:#75715e">-- Permite editar un elemento de la lista en un indice dado</span>
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">where</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> Data.List  <span style="color:#75715e">-- Importar utilidades de listas, como &#39;isPrefixOf&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- import Data.Char (digitToInt)  </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Muestra una entrada TODO con su numero de indice</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">putTodo</span> <span style="color:#f92672">::</span> (<span style="color:#66d9ef">Int</span>, <span style="color:#66d9ef">String</span>) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">IO</span> ()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">putTodo</span> (n, todo) <span style="color:#f92672">=</span> putStrLn (show n <span style="color:#f92672">++</span> <span style="color:#e6db74">&#34;: &#34;</span> <span style="color:#f92672">++</span> todo)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Funcion principal que interpreta los comandos del usuario</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">prompt</span> <span style="color:#f92672">::</span> [<span style="color:#66d9ef">String</span>] <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">IO</span> ()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">prompt</span> todos <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  putStrLn <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  putStrLn <span style="color:#e6db74">&#34;Test todo with Haskell. You can use +(create), -(delete), s(show), e(dit), l(ist), r(everse), c(lear), q(uit) commands.&#34;</span>
+</span></span><span style="display:flex;"><span>  command <span style="color:#f92672">&lt;-</span> getLine
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;e&#34;</span> `isPrefixOf` command  <span style="color:#75715e">-- Si el comando comienza con &#39;e&#39;, editar</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">then</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>      print <span style="color:#e6db74">&#34;What is the new todo for that?&#34;</span>
+</span></span><span style="display:flex;"><span>      newTodo <span style="color:#f92672">&lt;-</span> getLine
+</span></span><span style="display:flex;"><span>      editTodo command todos newTodo
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span> interpret command todos  <span style="color:#75715e">-- Para otros comandos, usar interpret</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Interpreta los distintos comandos del usuario</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">interpret</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">String</span> <span style="color:#f92672">-&gt;</span> [<span style="color:#66d9ef">String</span>] <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">IO</span> ()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">interpret</span> (<span style="color:#e6db74">&#39;+&#39;</span> <span style="color:#66d9ef">:</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#66d9ef">:</span> todo) todos <span style="color:#f92672">=</span> prompt (todo <span style="color:#66d9ef">:</span> todos)  <span style="color:#75715e">-- Agregar un nuevo TODO al principio</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">interpret</span> (<span style="color:#e6db74">&#39;-&#39;</span> <span style="color:#66d9ef">:</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#66d9ef">:</span> num) todos <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> deleteOne (read num) todos <span style="color:#66d9ef">of</span>  <span style="color:#75715e">-- Eliminar el TODO en la posicion dada</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">Nothing</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>      putStrLn <span style="color:#e6db74">&#34;No TODO entry matches the given number&#34;</span>
+</span></span><span style="display:flex;"><span>      prompt todos
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">Just</span> todos&#39; <span style="color:#f92672">-&gt;</span> prompt todos&#39;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">interpret</span> (<span style="color:#e6db74">&#39;s&#39;</span> <span style="color:#66d9ef">:</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#66d9ef">:</span> num) todos <span style="color:#f92672">=</span>  <span style="color:#75715e">-- Mostrar una entrada especifica</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> showOne (read num) todos <span style="color:#66d9ef">of</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">Nothing</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>      putStrLn <span style="color:#e6db74">&#34;No TODO entry matches the given number&#34;</span>
+</span></span><span style="display:flex;"><span>      prompt todos
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">Just</span> todo <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>      print <span style="color:#f92672">$</span> num <span style="color:#f92672">++</span> <span style="color:#e6db74">&#34;. &#34;</span> <span style="color:#f92672">++</span> todo
+</span></span><span style="display:flex;"><span>      prompt todos
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">interpret</span> <span style="color:#e6db74">&#34;l&#34;</span> todos <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>  <span style="color:#75715e">-- Listar todos los TODOs</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> numberOfTodos <span style="color:#f92672">=</span> length todos
+</span></span><span style="display:flex;"><span>  putStrLn <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  print <span style="color:#f92672">$</span> show numberOfTodos <span style="color:#f92672">++</span> <span style="color:#e6db74">&#34; in total&#34;</span>
+</span></span><span style="display:flex;"><span>  mapM_ putTodo (zip [<span style="color:#ae81ff">0</span> <span style="color:#f92672">..</span>] todos)
+</span></span><span style="display:flex;"><span>  prompt todos
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">interpret</span> <span style="color:#e6db74">&#34;r&#34;</span> todos <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>  <span style="color:#75715e">-- Revertir el orden de la lista</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> numberOfTodos <span style="color:#f92672">=</span> length todos
+</span></span><span style="display:flex;"><span>  putStrLn <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  print <span style="color:#f92672">$</span> show numberOfTodos <span style="color:#f92672">++</span> <span style="color:#e6db74">&#34; in total&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> reversedTodos <span style="color:#f92672">=</span> reverseTodos todos
+</span></span><span style="display:flex;"><span>  mapM_ putTodo (zip [<span style="color:#ae81ff">0</span> <span style="color:#f92672">..</span>] reversedTodos)
+</span></span><span style="display:flex;"><span>  prompt todos
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">interpret</span> <span style="color:#e6db74">&#34;c&#34;</span> todos <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>  <span style="color:#75715e">-- Limpiar la lista TODO</span>
+</span></span><span style="display:flex;"><span>  print <span style="color:#e6db74">&#34;Clear todo list.&#34;</span>
+</span></span><span style="display:flex;"><span>  prompt <span style="color:#66d9ef">[]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">interpret</span> <span style="color:#e6db74">&#34;q&#34;</span> todos <span style="color:#f92672">=</span> return ()  <span style="color:#75715e">-- Salir del programa</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">interpret</span> command todos <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>  <span style="color:#75715e">-- Comando invalido</span>
+</span></span><span style="display:flex;"><span>  putStrLn (<span style="color:#e6db74">&#34;Invalid command: `&#34;</span> <span style="color:#f92672">++</span> command <span style="color:#f92672">++</span> <span style="color:#e6db74">&#34;`&#34;</span>)
+</span></span><span style="display:flex;"><span>  prompt todos
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Elimina una entrada TODO en una posicion especifica</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">deleteOne</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">Int</span> <span style="color:#f92672">-&gt;</span> [a] <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Maybe</span> [a]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">deleteOne</span> <span style="color:#ae81ff">0</span> (<span style="color:#66d9ef">_</span> <span style="color:#66d9ef">:</span> as) <span style="color:#f92672">=</span> <span style="color:#66d9ef">Just</span> as
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">deleteOne</span> n (a <span style="color:#66d9ef">:</span> as) <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  as&#39; <span style="color:#f92672">&lt;-</span> deleteOne (n <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) as
+</span></span><span style="display:flex;"><span>  return (a <span style="color:#66d9ef">:</span> as&#39;)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">deleteOne</span> <span style="color:#66d9ef">_</span> <span style="color:#66d9ef">[]</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Nothing</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Muestra una entrada TODO si existe</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">showOne</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">Int</span> <span style="color:#f92672">-&gt;</span> [a] <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Maybe</span> a
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">showOne</span> n todos <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (n <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>) <span style="color:#f92672">||</span> (n <span style="color:#f92672">&gt;</span> length todos)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">then</span> <span style="color:#66d9ef">Nothing</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">Just</span> (todos <span style="color:#f92672">!!</span> n)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Reemplaza el elemento en el indice dado con uno nuevo</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">editIndex</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">Int</span> <span style="color:#f92672">-&gt;</span> a <span style="color:#f92672">-&gt;</span> [a] <span style="color:#f92672">-&gt;</span> [a]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">editIndex</span> i x xs <span style="color:#f92672">=</span> take i xs <span style="color:#f92672">++</span> [x] <span style="color:#f92672">++</span> drop (i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) xs
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Logica para editar una entrada TODO</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">editTodo</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">String</span> <span style="color:#f92672">-&gt;</span> [<span style="color:#66d9ef">String</span>] <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">String</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">IO</span> ()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">editTodo</span> (<span style="color:#e6db74">&#39;e&#39;</span> <span style="color:#66d9ef">:</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#66d9ef">:</span> num) todos newTodo <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> editOne (read num) todos newTodo <span style="color:#66d9ef">of</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">Nothing</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>      putStrLn <span style="color:#e6db74">&#34;No TODO entry matches the given number&#34;</span>
+</span></span><span style="display:flex;"><span>      prompt todos
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">Just</span> todo <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>      putStrLn <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      print <span style="color:#f92672">$</span> <span style="color:#e6db74">&#34;Old todo is &#34;</span> <span style="color:#f92672">++</span> todo
+</span></span><span style="display:flex;"><span>      print <span style="color:#f92672">$</span> <span style="color:#e6db74">&#34;New todo is &#34;</span> <span style="color:#f92672">++</span> newTodo
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">let</span> newTodos <span style="color:#f92672">=</span> editIndex (read num <span style="color:#f92672">::</span> <span style="color:#66d9ef">Int</span>) newTodo todos
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">let</span> numberOfTodos <span style="color:#f92672">=</span> length newTodos
+</span></span><span style="display:flex;"><span>      putStrLn <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      print <span style="color:#f92672">$</span> show numberOfTodos <span style="color:#f92672">++</span> <span style="color:#e6db74">&#34; in total&#34;</span>
+</span></span><span style="display:flex;"><span>      mapM_ putTodo (zip [<span style="color:#ae81ff">0</span> <span style="color:#f92672">..</span>] newTodos)
+</span></span><span style="display:flex;"><span>      prompt newTodos
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Devuelve la entrada antigua antes de editar, si existe</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">editOne</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">Int</span> <span style="color:#f92672">-&gt;</span> [a] <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">String</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Maybe</span> a
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">editOne</span> n todos newTodo <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (n <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>) <span style="color:#f92672">||</span> (n <span style="color:#f92672">&gt;</span> length todos)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">then</span> <span style="color:#66d9ef">Nothing</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">Just</span> (todos <span style="color:#f92672">!!</span> n)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Invierte el orden de una lista</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">reverseTodos</span> <span style="color:#f92672">::</span> [a] <span style="color:#f92672">-&gt;</span> [a]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">reverseTodos</span> xs <span style="color:#f92672">=</span> go xs <span style="color:#66d9ef">[]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">where</span>
+</span></span><span style="display:flex;"><span>    go <span style="color:#f92672">::</span> [a] <span style="color:#f92672">-&gt;</span> [a] <span style="color:#f92672">-&gt;</span> [a]
+</span></span><span style="display:flex;"><span>    go <span style="color:#66d9ef">[]</span> ys <span style="color:#f92672">=</span> ys
+</span></span><span style="display:flex;"><span>    go (x <span style="color:#66d9ef">:</span> xs) ys <span style="color:#f92672">=</span> go xs (x <span style="color:#66d9ef">:</span> ys)
+</span></span></code></pre></div><h4 id="spechs"><strong>Spec.hs</strong></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Haskell" data-lang="Haskell"><span style="display:flex;"><span><span style="color:#75715e">-- Importa el modulo para manejar aserciones y excepciones</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> Control.Exception 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Importa la función editIndex desde el módulo Lib</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> Lib (<span style="color:#a6e22e">editIndex</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Funcion principal</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">main</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">IO</span> ()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">main</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    putStrLn <span style="color:#e6db74">&#34;Test:&#34;</span>  <span style="color:#75715e">-- Mensaje inicial para el usuario</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">-- Datos de prueba</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> index <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>          <span style="color:#75715e">-- Indice que queremos editar</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> new_todo <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;two&#34;</span>   <span style="color:#75715e">-- Nuevo valor que queremos poner en la lista</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> todos <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Write&#34;</span>, <span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;blog&#34;</span>, <span style="color:#e6db74">&#34;post&#34;</span>]         <span style="color:#75715e">-- Lista original</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> new_todos <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Write&#34;</span>, <span style="color:#e6db74">&#34;two&#34;</span>, <span style="color:#e6db74">&#34;blog&#34;</span>, <span style="color:#e6db74">&#34;post&#34;</span>]   <span style="color:#75715e">-- Lista esperada después de la edición</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">-- Comparamos el resultado de aplicar &#39;editIndex&#39; con la lista esperada</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> result <span style="color:#f92672">=</span> editIndex index new_todo todos <span style="color:#f92672">==</span> new_todos
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">-- assert :: Bool -&gt; a -&gt; a</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">-- Si &#39;result&#39; es False, lanza una excepcion. Si es True, imprime el mensaje</span>
+</span></span><span style="display:flex;"><span>    putStrLn <span style="color:#f92672">$</span> assert result <span style="color:#e6db74">&#34;editIndex worked.&#34;</span>  
+</span></span></code></pre></div><h3 id="codigo-en-aprender-a-usar-los-paquetes-en-haskell"><strong>Codigo en aprender a usar los paquetes en haskell</strong></h3>
+<h4 id="mainhs-1"><strong>Main.hs</strong></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Haskell" data-lang="Haskell"><span style="display:flex;"><span><span style="color:#75715e">-- Enlace al tutorial oficial sobre Stack Script</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- https://www.fpcomplete.com/haskell/tutorial/stack-script/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Estas líneas son necesarias para que el archivo funcione como script ejecutable en Unix</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- #!/usr/local/bin/env stack</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- stack --resolver lts-12.21 script</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Modulo principal del programa</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> Main <span style="color:#66d9ef">where</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Importar dotenv para cargar variables desde un archivo .env</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> Configuration.Dotenv (<span style="color:#a6e22e">defaultConfig</span>, <span style="color:#a6e22e">loadFile</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Importar la funcion prompt desde nuestro módulo Lib</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> Lib (<span style="color:#a6e22e">prompt</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Importar lookupEnv para obtener variables de entorno</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> System.Environment (<span style="color:#a6e22e">lookupEnv</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Importar openBrowser para abrir URLs en el navegador predeterminado</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> Web.Browser (<span style="color:#a6e22e">openBrowser</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- $stack run</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- $stack build</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- $stack install</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- $stack install --local-bin-path &lt;dir&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- $stack install --local-bin-path .</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- $./text-exe</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- $stack Main.hs</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- $chmod +x Main.hs</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- $./Main.hs</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Comentario aclaratorio: este script requiere .env y puede abrir un navegador.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Función principal</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">main</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">IO</span> ()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">main</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">-- Carga las variables de entorno desde el archivo .env</span>
+</span></span><span style="display:flex;"><span>  loadFile defaultConfig
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">-- Busca la variable WEBSITE en el entorno</span>
+</span></span><span style="display:flex;"><span>  website <span style="color:#f92672">&lt;-</span> lookupEnv <span style="color:#e6db74">&#34;WEBSITE&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">-- Verifica si la variable WEBSITE esta definida</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> website <span style="color:#66d9ef">of</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">Nothing</span> <span style="color:#f92672">-&gt;</span> <span style="color:#a6e22e">error</span> <span style="color:#e6db74">&#34;You should set WEBSITE at .env file.&#34;</span>  <span style="color:#75715e">-- Error si no esta definida</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">Just</span> s <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">-- Intenta abrir la URL en el navegador predeterminado</span>
+</span></span><span style="display:flex;"><span>      result <span style="color:#f92672">&lt;-</span> openBrowser s
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> result
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">then</span> print (<span style="color:#e6db74">&#34;Could open &#34;</span> <span style="color:#f92672">++</span> s)     <span style="color:#75715e">-- Confirmación de exito</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span> print (<span style="color:#e6db74">&#34;Couldn&#39;t open &#34;</span> <span style="color:#f92672">++</span> s)  <span style="color:#75715e">-- Mensaje de error si falla</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">-- Muestra los comandos disponibles al usuario</span>
+</span></span><span style="display:flex;"><span>      putStrLn <span style="color:#e6db74">&#34;Commands:&#34;</span>
+</span></span><span style="display:flex;"><span>      putStrLn <span style="color:#e6db74">&#34;+ &lt;String&gt; - Add a TODO entry&#34;</span>
+</span></span><span style="display:flex;"><span>      putStrLn <span style="color:#e6db74">&#34;- &lt;Int&gt;    - Delete the numbered entry&#34;</span>
+</span></span><span style="display:flex;"><span>      putStrLn <span style="color:#e6db74">&#34;s &lt;Int&gt;    - Show the numbered entry&#34;</span>
+</span></span><span style="display:flex;"><span>      putStrLn <span style="color:#e6db74">&#34;e &lt;Int&gt;    - Edit the numbered entry&#34;</span>
+</span></span><span style="display:flex;"><span>      putStrLn <span style="color:#e6db74">&#34;l          - List todo&#34;</span>
+</span></span><span style="display:flex;"><span>      putStrLn <span style="color:#e6db74">&#34;r          - Reverse todo&#34;</span>
+</span></span><span style="display:flex;"><span>      putStrLn <span style="color:#e6db74">&#34;c          - Clear todo&#34;</span>
+</span></span><span style="display:flex;"><span>      putStrLn <span style="color:#e6db74">&#34;q          - Quit&#34;</span>
+</span></span><span style="display:flex;"><span>      prompt <span style="color:#66d9ef">[]</span>  <span style="color:#75715e">-- Inicia el bucle de interaccion con una lista vacia</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- putStrLn &#34;Commands:&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- putStrLn &#34;+ &lt;String&gt; - Add a TODO entry&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- putStrLn &#34;- &lt;Int&gt;    - Delete the numbered entry&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- putStrLn &#34;s &lt;Int&gt;    - Show the numbered entry&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- putStrLn &#34;e &lt;Int&gt;    - Edit the numbered entry&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- putStrLn &#34;l          - List todo&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- putStrLn &#34;r          - Reverse todo&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- putStrLn &#34;c          - Clear todo&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- putStrLn &#34;q          - Quit&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- prompt [] -- Start with the empty todo list.</span>
+</span></span></code></pre></div><ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/Portafolio_ParadigmasProgramacion/" >
+    &copy;  Rodrigo López Rojas 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

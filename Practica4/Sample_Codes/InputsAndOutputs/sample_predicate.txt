@@ -1,0 +1,1 @@
+likes(lili, cat).likes(jhon,dog).
