@@ -22,9 +22,9 @@ Preguntas: Para ejecutar un programa prolog preguntas, estas preguntas pueden re
 
 Primero se descarga el archivo .exe para iniciar la instalación de GNU Prolog
 
-![](./images/gnu.png)
+![](./images/gnu1.png)
 
-![](./images/gnuinstalacion.png)  
+![](./images/gnuInstalacion.png)  
 
 
 ## **Hello world**
